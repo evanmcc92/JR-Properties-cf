@@ -47,9 +47,9 @@ select * from MaintenanceTickets WHERE TicketID = #Form.TicketID#;
 DELETE FROM MaintenanceTickets WHERE TicketID = #Form.TicketID#;
 </cfquery>
                 <cfoutput query="applications">
+                <h1>Ticket No. #TicketID#</h1>
     
         <article>
-                <h1>Ticket No. #TicketID#</h1>
 <h3>The following ticket has been deleted.</h3> 
                
 

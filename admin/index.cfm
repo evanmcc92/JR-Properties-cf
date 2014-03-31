@@ -118,6 +118,37 @@
             	<p>Total Listings: <a href="listing-all.cfm">#listings.RecordCount#</a></p>
                 </cfoutput>
             </section>
+        	<section id="finances-admin">
+        		<h3>Monthly Incomes</h3>
+               <!-- commercial total -->
+                <cfquery datasource="team3" name="commercial-all">
+                SELECT sum(MonthlyPrice) FROM CommercialUnits as commercialtotal;
+                </cfquery>
+                <cfoutput>
+            	<p>Max income for commercial units: #commercial-all.commercialtotal#</p>
+                </cfoutput>
+               <!-- residential total -->
+                <cfquery datasource="team3" name="residential-all">
+                SELECT sum(MonthlyPrice) FROM ResidentialUnits as residentialtotal;
+                </cfquery>
+                <cfoutput>
+            	<p>Max income for residential units: #residential-all.residentialtotal#</p>
+                </cfoutput>
+               <!-- commercial total where vacant = false-->
+                <cfquery datasource="team3" name="commercialvacant">
+                SELECT sum(MonthlyPrice) FROM CommercialUnits WHERE Vacant='False' as commercialvacanttotal;
+                </cfquery>
+                <cfoutput>
+            	<p>Current Monthly Residential Revenue: #commercialvacant.commercialvacanttotal#</p>
+                </cfoutput>
+               <!-- residential total -->
+                <cfquery datasource="team3" name="residentialvacant">
+                SELECT sum(MonthlyPrice) FROM ResidentialUnits WHERE Vacant='False' as residentialvacanttotal;
+                </cfquery>
+                <cfoutput>
+            	<p>Current Monthly Residential Revenue: #residentialvacant.residentialvacanttotal#</p>
+                </cfoutput>
+            </section>
         </article>
     <cfinclude template="footer.cfm">
     </div>

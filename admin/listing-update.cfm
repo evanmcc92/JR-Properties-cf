@@ -42,9 +42,9 @@
     <div id="body">
 
     <cfinclude template="header.cfm">
+                <h1>Listing Updated</h1>
     
         <article>
-                <h1>Listing Updated</h1>
 </article> 
             <section id="listingform">
             	<cfif #Form.UnitID# contains "R" >
@@ -65,6 +65,10 @@
                             <tr>
                                 <td><strong>Unit Name:</strong></td>
                                 <td><input name="UnitName" id="UnitName" type="text" value="#UnitName#"></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Check for Vacant:</strong></td>
+                                <td><input name="Vacant" id="Vacant" type="checkbox" value="#Vacant#"></td>
                             </tr>
                             <tr>
                                 <td><strong>Property ID*:</strong></td>
@@ -140,6 +144,10 @@ select * from CommercialUnits WHERE UnitID = '#Form.UnitID#';
                             <tr>
                                 <td><strong>Unit Name:</strong></td>
                                 <td><input name="UnitName" id="UnitName" type="text" value="#UnitName#"></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Check for Vacant:</strong></td>
+                                <td><input name="Vacant" id="Vacant" type="checkbox" value="#Vacant#"></td>
                             </tr>
                             <tr>
                                 <td><strong>Property ID*:</strong></td>

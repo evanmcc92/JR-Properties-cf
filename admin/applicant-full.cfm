@@ -39,9 +39,9 @@
     <div id="body">
 
     <cfinclude template="header.cfm">
+                <h1>Application</h1>
     
         <article>
-                <h1>Application</h1>
 <cfquery datasource="team3" name="applications">
 select * from Applications WHERE ApplicationID = #Form.ApplicationID#;
 </cfquery>

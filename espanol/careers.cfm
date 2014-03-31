@@ -14,12 +14,12 @@
     <div id="body">
 
     <cfinclude template="header.cfm">
+            <h1>Empleo</h1>
     
         <article>
-            <h1>Careers</h1>
-            <p>As  a growing company, J &amp; R Properties is looking for new talent.</p>
-            <p> Positions  can vary from assistant property managers to electricians and plumbers. </p>
-            <p>If you  are interested in applying, please send a cover letter and resume to <a href="mailto:careers@jrproperties.com">careers@jrproperties.com</a>.</p>
+          <p>A medida que nuestra empresa sigue creciendo, J &amp; R Propiedades  siempre est&aacute; en b&uacute;squeda de nuevos talentos.</p>
+            <p> Las posiciones pueden variar entre asistentes administrativos de propiedad, a electricistas y plomeros.</p>
+            <p> Si usted est&aacute; interesado en aplicar, por favor envíe  una carta de presentaci&oacute;n y curr&iacute;culo  vitae a <a href="mailto:careers@jrproperties.com">careers@jrproperties.com</a>.</p>
         </article>
 <cfinclude template="footer.cfm">
 

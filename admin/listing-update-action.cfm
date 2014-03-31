@@ -42,9 +42,9 @@
     <div id="body">
 
     <cfinclude template="header.cfm">
+                <h1>Listing Updated</h1>
     
         <article>
-                <h1>Listing Updated</h1>
             <h3>Listings Has Been Updated</h3>
 </article> 
             <section id="listingform">
@@ -62,6 +62,10 @@
                             <tr>
                                 <td><strong>Unit Name:</strong></td>
                                 <td>#UnitName#</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Vacant:</strong></td>
+                                <td>#Vacant#"</td>
                             </tr>
                             <tr>
                                 <td><strong>Property ID*:</strong></td>
@@ -119,6 +123,10 @@
                             <tr>
                                 <td><strong>Unit Name:</strong></td>
                                 <td>#UnitName#</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Vacant:</strong></td>
+                                <td>#Vacant#"</td>
                             </tr>
                             <tr>
                                 <td><strong>Property ID*:</strong></td>

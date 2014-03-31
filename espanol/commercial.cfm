@@ -19,36 +19,36 @@ select * from CommercialUnits
     <div id="body">
 
     <cfinclude template="header.cfm">
+                <h1>Propiedades Comerciales</h1>
     
         <article>
-                <h1>Commercial</h1>
-                <p>Look below for descriptions and pictures of the commercial properties in our portfolio. We are currently looking to expand our commercial property management.</p>
-                <section>
-                    <cfloop query="commercialunits">
-					<cfoutput>
-                    <table id="resident-#UnitID#" class="residentlisting">
-                        <tr>
-                            <td width="295" rowspan="5">
-                            	<img src="../img/#StreetAddress#.png" alt="#Description#" width="275" />
-							</td>
-                            <td width="325">#StreetAddress#, #City#</td>
-                        </tr>
-                        <tr>
-                            <td>#UnitName#</td>
-                        </tr>
-                        <tr>
-                            <td>#DollarFormat(MonthlyPrice)# (monthly)</td>
-                        </tr>
-                        <tr>
-                            <td>Date Available: #DATEFORMAT(DateAvailable, "m/d/yyyy")#</td>
-                        </tr>
-                        <tr>
-                            <td>#Description#</td>
-                        </tr>
-                    </table>
-                   </cfoutput>
-                   </cfloop>
-                </section>
+                <p>Vea a continuaci&oacute;n las descripciones y fotograf&iacute;as de nuestras propiedades comerciales. En estos momentos estamos buscando ampliar nuestro portafolio de nuestras propiedades comerciales.</p>
+<section>
+        <cfloop query="commercialunits">
+		  <cfoutput>
+            <table id="resident-#UnitID#" class="residentlisting">
+                <tr>
+                    <td width="295" rowspan="5">
+                       	<img src="../img/#StreetAddress#.png" alt="#Description#" width="275" />
+				    </td>
+                    <td width="325">#StreetAddress#, #City#</td>
+                </tr>
+                <tr>
+                    <td>#UnitName#</td>
+                </tr>
+                <tr>
+                    <td>#DollarFormat(MonthlyPrice)# (monthly)</td>
+                </tr>
+                <tr>
+                    <td>Date Available: #DATEFORMAT(DateAvailable, "m/d/yyyy")#</td>
+                </tr>
+                <tr>
+                    <td>#Description#</td>
+                </tr>
+            </table>
+          </cfoutput>
+       </cfloop>
+      </section>
         </article>
 <cfinclude template="footer.cfm">
 

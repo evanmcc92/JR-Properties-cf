@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html>
 <head>
@@ -50,13 +50,14 @@
     <div id="body">
     
     <cfinclude template="header.cfm">
-<h1>J&amp;R Properties</h1>
-<h3>About Us</h3>
-            <p>J & R Properties is a property management firm that administrates commercial and residential properties within the Greater Boston area. </p>
-            <p>We are committed to providing expert property management services to building owners and residents. </p>
-      <p>Our vision is to create strong relationships with clients, residents and the local community.</p>
-            <p> Through hard work and dedication, J & R Properties has successfully operated by its vision since 1987.</p>
-            <p>&nbsp;</p>
+<h1>Nuestra compa&ntilde;&iacute;a </h1>
+<h3> Acerca de J &amp; R Propiedades</h3>
+<p> J &amp; R Propiedades es una firma de gesti&oacute;n de la propiedad que administra propiedades  comerciales y residenciales en el &aacute;rea de Boston. </p>
+<p> Estamos comprometidos con la prestaci&oacute;n de servicios de  administraci&oacute;n de propiedades de expertos para los propietarios de edificios y  los residentes. </p>
+<p> Nuestra visi&oacute;n es crear relaciones s&oacute;lidas con los clientes,  los residentes y la comunidad local. </p>
+<p> A trav&eacute;s de nuetro trabajo duro y dedicaci&oacute;n, J &amp; R Propiedades ha operado con &eacute;xito en su visión desde el año 1987.</p>
+<h1>&nbsp;</h1>
+          <p>&nbsp;</p>
 
         
         <article>

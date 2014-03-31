@@ -14,37 +14,44 @@
     <div id="body">
 
     <cfinclude template="header.cfm">
-    
+    <h1>Pol&iacute;tica de privacidad</h1>
+    <p>Este aviso de privacidad establece las pr&aacute;cticas de privacidad para (www.jrpropertyrentals.com). Este aviso de privacidad aplica &uacute;nicamente a la informaci&oacute;n coleccionada por este sitio web. Se le notifica lo siguiente:</p>
+    <ul>
+      <li>Informaci&oacute;n de identificaci&oacute;n personal que se recopila a trav&eacute;s del sitio web, c&oacute;mo se utiliza y con qui&eacute;n puede ser compartida.</li>
+      <li>Qu&eacute; opciones est&aacute;n disponibles para usted con respecto al uso de sus datos.</li>
+      <li>Los procedimientos de seguridad para proteger el mal uso de su informaci&oacute;n.</li>
+      <li>C&oacute;mo puede corregir cualquier inexactitud en la informaci&oacute;n.</li>
+    </ul>
         <aside id="aside">
-            <ul>
-                <li><a href="#legal">Legal Disclaimer</a></li>
-                <li><a href="#privacy">Privacy Statement</a></li>
-            </ul>
+          <ul>
+            <li><a href="#info">Sobre la recopilaci&oacute;n, uso y compartir</a></li>
+            <li><a href="#access">Su acceso y control sobre la informaci&oacute;n</a></li>
+            <li><a href="#security">Seguridad</a></li>
+          </ul>
         </aside>
         <article id="article">
-            <section id="legal">
-                <h1>Legal Disclaimer</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit mauris felis, in hendrerit ante imperdiet in. Curabitur accumsan accumsan dictum. Suspendisse ultrices lacinia purus sed luctus. Nullam sed semper lacus, sit amet cursus purus. Sed in faucibus odio, nec tincidunt massa. Duis vulputate accumsan neque, sit amet viverra sapien sagittis eu. Pellentesque at nibh pellentesque, vehicula lectus a, condimentum nisi.</p>
-                <p>Integer suscipit condimentum fermentum. Vestibulum vitae dolor id nulla convallis venenatis. Nulla vel est leo. Quisque ultricies nec diam vel auctor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam arcu quam, pretium eget gravida ac, rhoncus at orci. Maecenas magna massa, pulvinar a orci a, pulvinar ultrices urna. Etiam vitae condimentum leo. Nunc nec fringilla tortor.</p>
-
-                <p>Donec dictum adipiscing augue, ut gravida eros aliquam id. Vivamus et dui elit. Sed rutrum at metus a mattis. Mauris vulputate tincidunt porta. Etiam pretium dapibus adipiscing. Donec vel nisi ac diam vulputate blandit. Phasellus ac consequat massa. Proin volutpat nisi tortor, eu cursus massa molestie et. Nullam eu sem urna. Curabitur eget placerat ligula, sit amet consectetur tortor. Duis vulputate, arcu vitae blandit dictum, mauris sapien bibendum massa, a viverra urna leo a purus. Maecenas porttitor semper ligula nec molestie. Nulla velit enim, dapibus vehicula mattis sit amet, luctus et mi. Proin diam leo, ultricies a euismod ac, facilisis sit amet ipsum. Phasellus venenatis libero eget nisi laoreet, non accumsan elit congue. Phasellus in turpis lectus.</p>
-
-                <p>Quisque ac risus libero. Nunc egestas facilisis quam in lacinia. In at ultrices enim. Praesent ac ipsum non odio consectetur elementum nec id ligula. Phasellus odio velit, feugiat eget sollicitudin a, luctus non enim. Quisque viverra arcu vitae orci sollicitudin, auctor placerat magna pellentesque. Aliquam lacinia fringilla nulla, id semper tortor tincidunt eu. Proin facilisis, tortor eu faucibus venenatis, eros arcu auctor turpis, ut tincidunt nisl nibh at magna. Nullam dui massa, volutpat id mauris at, adipiscing dignissim quam. Donec sed condimentum leo. Vivamus sed magna faucibus, condimentum justo a, varius libero. Vivamus bibendum enim at massa dignissim, eu accumsan risus commodo. Duis gravida hendrerit mauris, at aliquet neque facilisis a. Phasellus accumsan porta lacinia.</p>
-
-                <p>Quisque in luctus velit, et fringilla ligula. Nam vitae nisl ut justo tempor sollicitudin et sit amet lacus. Donec tempor lacus purus, non aliquam neque tempor cursus. Maecenas nec lectus tristique, convallis eros in, feugiat lorem. Nunc leo nisl, interdum nec gravida id, placerat sit amet mi. Ut vel justo aliquet, sollicitudin eros ac, auctor felis. Duis ligula ligula, tincidunt eget lorem et, lobortis ullamcorper felis. Quisque ultrices, nisi eu semper congue, nisl diam pharetra erat, in fermentum velit erat id sem. Nunc sit amet malesuada neque. Vivamus lacinia consectetur tortor id dapibus. Nullam eget felis lectus. Proin eget tempor sapien, a blandit eros. Phasellus suscipit mi neque, eget condimentum nunc malesuada et. Nunc quis erat eu ipsum tempor tempus eget congue sem. Quisque vitae volutpat lorem, eget lobortis ante.</p>
+            <section id="info">
+                <h1>Sobre la recopilaci&oacute;n, uso y compartir</h1>
+                <p>Somos los &uacute;nicos due&ntilde;os de la informaci&oacute;n recogida en este sitio web. S&oacute;lo tenemos acceso a la informaci&oacute;n que usted nos proporcione voluntariamente a trav&eacute;s de correo electr&oacute;nico o los formularios de solicitud de usted. No venderemos ni alquilaremos esta informaci&oacute;n a nadie.</p>
+                <p>Nosotros usaremos su informaci&oacute;n para responderle a usted, respecto a la raz&oacute;n por la cual hemos sido contactados. No compartiremos su informaci&oacute;n con ning&uacute;n tercero fuera de nuestra organizaci&oacute;n, salvo en lo necesario para satisfacer su petici&oacute;n.</p>
+          </section>
+            <section id="access">
+                <h1>Su acceso y control sobre la informaci&oacute;n</h1>
+                <p>Usted puede optar cancelar cualquier contacto futuro con nosotros en cualquier momento. Usted puede hacer lo siguiente en cualquier momento poni&eacute;ndose en contacto con nosotros a trav&eacute;s del correo electr&oacute;nico o n&uacute;mero de tel&eacute;fono que aparecen en nuestra p&aacute;gina web:</p>
+                <ul>
+                  <li>Ver qu&eacute; datos tenemos sobre usted, si los hubiese.</li>
+                  <li>Cambiar / corregir cualquier dato que tengamos sobre usted.</li>
+                  <li>Borrar los datos que tenemos sobre usted.</li>
+                  <li>Expresar cualquier preocupaci&oacute;n que tenga sobre nuestro uso de sus datos.</li>
+                </ul>
             </section>
-            <section id="privacy">
-                <h1>Privacy Statement</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit mauris felis, in hendrerit ante imperdiet in. Curabitur accumsan accumsan dictum. Suspendisse ultrices lacinia purus sed luctus. Nullam sed semper lacus, sit amet cursus purus. Sed in faucibus odio, nec tincidunt massa. Duis vulputate accumsan neque, sit amet viverra sapien sagittis eu. Pellentesque at nibh pellentesque, vehicula lectus a, condimentum nisi.</p>
-                <p>Integer suscipit condimentum fermentum. Vestibulum vitae dolor id nulla convallis venenatis. Nulla vel est leo. Quisque ultricies nec diam vel auctor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam arcu quam, pretium eget gravida ac, rhoncus at orci. Maecenas magna massa, pulvinar a orci a, pulvinar ultrices urna. Etiam vitae condimentum leo. Nunc nec fringilla tortor.</p>
-
-                <p>Donec dictum adipiscing augue, ut gravida eros aliquam id. Vivamus et dui elit. Sed rutrum at metus a mattis. Mauris vulputate tincidunt porta. Etiam pretium dapibus adipiscing. Donec vel nisi ac diam vulputate blandit. Phasellus ac consequat massa. Proin volutpat nisi tortor, eu cursus massa molestie et. Nullam eu sem urna. Curabitur eget placerat ligula, sit amet consectetur tortor. Duis vulputate, arcu vitae blandit dictum, mauris sapien bibendum massa, a viverra urna leo a purus. Maecenas porttitor semper ligula nec molestie. Nulla velit enim, dapibus vehicula mattis sit amet, luctus et mi. Proin diam leo, ultricies a euismod ac, facilisis sit amet ipsum. Phasellus venenatis libero eget nisi laoreet, non accumsan elit congue. Phasellus in turpis lectus.</p>
-
-                <p>Quisque ac risus libero. Nunc egestas facilisis quam in lacinia. In at ultrices enim. Praesent ac ipsum non odio consectetur elementum nec id ligula. Phasellus odio velit, feugiat eget sollicitudin a, luctus non enim. Quisque viverra arcu vitae orci sollicitudin, auctor placerat magna pellentesque. Aliquam lacinia fringilla nulla, id semper tortor tincidunt eu. Proin facilisis, tortor eu faucibus venenatis, eros arcu auctor turpis, ut tincidunt nisl nibh at magna. Nullam dui massa, volutpat id mauris at, adipiscing dignissim quam. Donec sed condimentum leo. Vivamus sed magna faucibus, condimentum justo a, varius libero. Vivamus bibendum enim at massa dignissim, eu accumsan risus commodo. Duis gravida hendrerit mauris, at aliquet neque facilisis a. Phasellus accumsan porta lacinia.</p>
-
-                <p>Quisque in luctus velit, et fringilla ligula. Nam vitae nisl ut justo tempor sollicitudin et sit amet lacus. Donec tempor lacus purus, non aliquam neque tempor cursus. Maecenas nec lectus tristique, convallis eros in, feugiat lorem. Nunc leo nisl, interdum nec gravida id, placerat sit amet mi. Ut vel justo aliquet, sollicitudin eros ac, auctor felis. Duis ligula ligula, tincidunt eget lorem et, lobortis ullamcorper felis. Quisque ultrices, nisi eu semper congue, nisl diam pharetra erat, in fermentum velit erat id sem. Nunc sit amet malesuada neque. Vivamus lacinia consectetur tortor id dapibus. Nullam eget felis lectus. Proin eget tempor sapien, a blandit eros. Phasellus suscipit mi neque, eget condimentum nunc malesuada et. Nunc quis erat eu ipsum tempor tempus eget congue sem. Quisque vitae volutpat lorem, eget lobortis ante.</p>
-            </section>
-        </article>
+            <section id="security">
+                <h1>Seguridad</h1>
+<p>Tomamos precauciones para proteger su informaci&oacute;n. Cuando usted env&iacute;a informaci&oacute;n sensible a trav&eacute;s del sitio web, su informaci&oacute;n es protegida tanto en l&iacute;nea como fuera de l&iacute;nea.</p>
+<p>Dondequiera que recopilemos informaci&oacute;n delicada , esa informaci&oacute;n es encriptada y transmitida a nosotros de una manera segura.</p>
+<p>S&oacute;lo los empleados que necesitan la informaci&oacute;n para realizar un trabajo espec&iacute;fico se les conceda acceso a la informaci&oacute;n de identificaci&oacute;n personal. Las computadoras / servidores en los que almacenamos informaci&oacute;n personal se mantienen en un entorno seguro.</p>
+          </section>
+        <p>Si usted siente que no estamos cumpliendo con esta pol&iacute;tica de privacidad, usted debe ponerse en contacto con nosotros inmediatamente por correo electr&oacute;nico <a href="mailto:perryjames249@gmail.com">perryjames249@gmail.com </a></p></article>
 <cfinclude template="footer.cfm">
 
   

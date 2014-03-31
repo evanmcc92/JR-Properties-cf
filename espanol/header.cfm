@@ -1,5 +1,5 @@
 <header id="top">
-            <figure id="logo"><a href="index.cfm"><img src="img/logo.png" alt="J&R Properties Logo"/></a></figure>
+            <figure id="logo"><a href="index.cfm"><img src="../img/logo.png" alt="J&R Properties Logo"/></a></figure>
             <address>
               52R Green Street<br>
               Lynn, MA 02194<br><br>
@@ -7,14 +7,14 @@
             </address>
             <nav>
                              <ul id="navbar">
-                    <li><a href="maintenance.cfm">Maintenance</a></li>
-      <li><a href="#">Properties</a><ul>
-                        <li><a href="commercial.cfm">Commercial</a></li>
-                        <li><a href="residential.cfm">Residential</a></li></ul>
+                    <li><a href="maintenance.cfm">Mantenimiento</a></li>
+      <li><a href="#">Propiedades</a><ul>
+                        <li><a href="commercial.cfm">Comerciales</a></li>
+                        <li><a href="residential.cfm">Residenciales</a></li></ul>
                     </li>
-                    <li><a href="landlord.cfm">Landlord</a></li>
-                    <li><a href="app.cfm">Application</a></li>
-                    <li><a href="../">English</a></li>
+                    <li><a href="landlord.cfm">Arrendador</a></li>
+                    <li><a href="app.cfm">Aplicaci&oacute;n</a></li>
+                    <li><a href="../index.cfm">English</a></li>
 </ul>
 
             </nav>

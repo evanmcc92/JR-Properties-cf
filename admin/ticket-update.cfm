@@ -44,9 +44,9 @@ select * from MaintenanceTickets WHERE TicketID = #Form.TicketID#;
 
     <cfinclude template="header.cfm">
                 <cfoutput query="tickets">
+                <h1>Ticket No. #TicketID#</h1>
     
         <article>
-                <h1>Ticket No. #TicketID#</h1>
 </article>
 </cfoutput>
 

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html>
 <head>
@@ -18,6 +18,7 @@
 <cfmail from="postmaster@evanamccullough.com" 
         to="#form.name# <#form.email#>"
         subject="Landlord Message"
+        server= "smtp.evanamccullough.com"
         type="html" >
         <html>
             <body>
@@ -37,7 +38,7 @@
 <cfoutput>
     <script>
         function completeAlert() {
-            alert("Thank you #form.name# for sending an email, expect to hear something soon.");
+            alert("Gracias #form.name# para el envío de un correo electrónico, espera escuchar algo pronto.");
         }
     </script>
 </cfoutput>
@@ -47,39 +48,38 @@
     <div id="body">
 
     <cfinclude template="header.cfm">
+      <h1>Se&ntilde;or Propietario</h1>
     
         <article>
             <section id="landlord-text">
-                <h1>Landlord</h1>
-                <p>J & R Properties is committed to administrating all particulars associated with maintenance and management. We provide the following services:</p>
+                <p>J & R Propiedades tiene el compromiso de administrar todos sus detalles asociados con el mantenimiento y la gesti&oacute;n. Ofrecemos los siguientes servicios:</p>
     
-                <p>Property Management:</p>
-<ul>
-  <li>Rent collections          </li>
-  <li>Expense payments</li>
-          <li>Fostering professional relationships with tenants</li>
-          <li>Renewal and extension of leases</li>
-          <li>Background and credit checks of applicants</li>
-          <li>Compliant with local, state and federal laws and regulations</li>
+                <p>Gesti&oacute;n de Propiedades:</p>
+<ul><li>Colecciones de renta</li>
+  <li> Pagos de gastos</li>
+  <li> Fomentar las relaciones profesionales con los inquilinos</li>
+  <li> Renovaci&oacute;n y ampliaci&oacute;n de los arrendamientos</li>
+  <li> Antecedentes y chequeo de cr&eacute;dito de los solicitantes</li>
+  <li> Cumplir con las leyes y regulaciones locales,estatales y federales</li>
         </ul>
-                <p>Maintenance:</p>
+                <p>Mantenimiento:</p>
                 <ul>
-                    <li>Timely problem identification and resolution.</li>
-                    <li>Plumbing, electric and carpentry services.</li>
-                    <li>Frequent property inspections.</li>
-                    <li>Friendly service.</li>
+                  <li>Identificaci&oacute;n de problemas y resoluci&oacute;n oportuna de los mismos.</li>
+                    <li> Servicios de plomer&iacute;a, electricidad y carpinter&iacute;a.</li>
+                    <li> Inspecci&oacute;n de las propiedades con frecuencia.</li>
+                    <li> Ofrecer un servicio amigable.</li>
                 </ul>
                 <p>&nbsp;</p>
-                <p>Interested in a property manager? Contact us here to set up a meeting.</p>
+                <p>Interesados en un gerente inmobiliario? Cont&aacute;ctanos aqu&iacute; para concertar una reuni&oacute;n.</p>
             </section>
 
             <section id="emailform">
                 <form method="POST" action="landlord.cfm" onSubmit="completeAlert()">
-                    <p>Email: <input name="email" id="email" size="50" Required="Yes" Message="Please enter email."></p>
-                    <p>Name: <input name="name" id="name" size="50" Required="YES" Message="Please enter Complete Name."></p>
-                    <p>Message:<br>
-                       <textarea name="message" id="message" cols="43" rows="5" placeholder="Enter message here."></textarea></p>
-                    <p><input type="submit" value="Submit"  class="button"> <input type="reset" value="Reset"  class="button"></p> 
+                    <p>Email: <input name="email" id="email" size="50" Required="Yes" Message="Entre su email aqui."></p>
+                    <p>Nombre: <input name="name" id="name" size="50" Required="YES" Message="Entre su nombre aqui."></p>
+                    <p>Mensaje:<br>
+                       <textarea name="message" id="message" cols="43" rows="5" placeholder="Entre su mensaje aqui."></textarea></p>
+                    <p><input type="submit" value="Enviar" class="button"> <input type="reset" value="Reiniciar" class="button"></p> 
                 </form>
             </section>
         </article>

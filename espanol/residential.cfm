@@ -33,13 +33,13 @@ select * from ResidentialUnits where City = 'Revere'
 
         
     <cfinclude template="header.cfm">
+                <h1>Propiedades Residenciales</h1>
     
         <article>
             <section id="article">
-                <h1>Residential Properties</h1>
-                <p>Managing residential properties is our specialty since 1987. We provide quality apartments in Everett, Lynn, Chelsea and Revere. Click on an area below in order to browser our current offerings.</p>
+                <p>La gesti&oacute;n de propiedades residenciales es nuestra especialidad desde 1987. Ofrecemos apartamentos de calidad en Everett, Lynn, Chelsea y Revere. </p>
                 <section id="chelsea">
-                    <h4>Chelsea</h4><p class="top"><a href="#top">Top</a></p>
+                    <h4>Chelsea</h4><p class="top"><a href="#top">Parte superior</a></p>
                     <cfloop query="unitsfromchelsea">
 					<cfoutput>
                     <table id="resident-#PropertyID#" class="residentlisting">
@@ -66,7 +66,7 @@ select * from ResidentialUnits where City = 'Revere'
                    </cfloop>
                 </section>
                 <section id="everett">
-                    <h4>Everett</h4><p class="top"><a href="#top">Top</a></p>
+                    <h4>Everett</h4><p class="top"><a href="#top">Parte superior</a></p>
                     <cfloop query="unitsfromeverett">
 					<cfoutput>
                     <table id="resident-#PropertyID#" class="residentlisting">
@@ -93,7 +93,7 @@ select * from ResidentialUnits where City = 'Revere'
                    </cfloop>
                 </section>
                 <section id="lynn">
-                    <h4>Lynn</h4><p class="top"><a href="#top">Top</a></p>
+                    <h4>Lynn</h4><p class="top"><a href="#top">Parte superior</a></p>
                     <cfloop query="unitsfromlynn">
 					<cfoutput>
                     <table id="resident-#PropertyID#" class="residentlisting">
@@ -120,7 +120,7 @@ select * from ResidentialUnits where City = 'Revere'
                    </cfloop>
                 </section>
                 <section id="revere">
-                    <h4>Revere</h4><p class="top"><a href="#top">Top</a></p>
+                    <h4>Revere</h4><p class="top"><a href="#top">Parte superior</a></p>
                     <cfloop query="unitsfromrevere">
 					<cfoutput>
                     <table id="resident-#PropertyID#" class="residentlisting">

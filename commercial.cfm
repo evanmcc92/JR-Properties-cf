@@ -19,9 +19,9 @@ select * from CommercialUnits
     <div id="body">
 
     <cfinclude template="header.cfm">
+                <h1>Commercial Properties</h1>
     
         <article>
-                <h1>Commercial</h1>
                 <p>Look below for descriptions and pictures of the commercial properties in our portfolio. We are currently looking to expand our commercial property management.</p>
                 <section>
                     <cfloop query="commercialunits">

@@ -54,17 +54,16 @@
     <div id="body">
 
     <cfinclude template="header.cfm">
+            <h1>Contact Us</h1>
     
       <article>
-            <h1>Contact Us</h1>
-            <p>Text for contact us.</p>
             <p>Our main office is located at 52R Green Street Lynn, MA. To contact us by  phone, please call (781) 974-5790.</p>
             <p>&nbsp;</p>
             <p id="maps"><iframe width="600" height="450" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=52R%20Green%20Street%20Lynn%2C%20MA%2002194&key=AIzaSyD-jE5-LQVhNq2pvw09RZSAaFUT5O6V0pk"></iframe></p>
             <p>&nbsp;</p>
             <p>Feel free to fill out the following form for any general  inquiries you may have.</p>
             <section id="emailform">
-                <form method="POST" action="landlord.cfm" onSubmit="completeAlert()">
+                <form method="POST" action="contact.cfm" onSubmit="completeAlert()">
                     <p>Email: <input name="email" id="email" size="50" Required="Yes" Message="Please enter email."></p>
                     <p>Name: <input name="name" id="name" size="50" Required="YES" Message="Please enter Complete Name."></p>
                     <p>Message:<br>

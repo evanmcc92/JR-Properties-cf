@@ -33,9 +33,9 @@
     <div id="body">
 
     <cfinclude template="header.cfm">
+                <h1>Application</h1>
     
         <article>
-                <h1>Application</h1>
                 <p>Thank you for submitting your application. </p>
                
 

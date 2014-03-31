@@ -14,7 +14,7 @@
                     </li>
                     <li><a href="landlord.cfm">Landlord</a></li>
                     <li><a href="app.cfm">Application</a></li>
-                    <li><a href="espanol/">Espa&ntilde;ol</a></li>
+                    <li><a href="espanol/index.cfm">Espa&ntilde;ol</a></li>
 </ul>
 
             </nav>

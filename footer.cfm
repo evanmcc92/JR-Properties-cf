@@ -7,7 +7,7 @@
                     <li><a href="careers.cfm">Careers</a></li>
                     <li><a href="legal.cfm">Legal Disclaimers</a></li>
                     <li><a href="contact.cfm">Contact Us</a></li>
-                    <li><a href="espanol/">Espa&ntilde;ol</a></li>
+                    <li><a href="espanol/index.cfm">Espa&ntilde;ol</a></li>
                 </ul>
             </nav>
         </footer>

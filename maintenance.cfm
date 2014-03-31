@@ -16,8 +16,8 @@
 
     <cfinclude template="header.cfm">
     
-        <article>
                 <h1>Maintenance</h1>
+        <article>
                 <p>We  are sorry to hear that you are experiencing inconveniences with your unit.  Please fill out the form below with your name, phone and description of the  issue. Upon submitting the form, our team will begin to resolve the issue to  the best of our ability. </p>
                
             <cfquery datasource="team3" name="unit_id">

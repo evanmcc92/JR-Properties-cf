@@ -18,6 +18,7 @@
 <cfmail from="postmaster@evanamccullough.com" 
         to="#form.name# <#form.email#>"
         subject="Landlord Message"
+        server= "smtp.evanamccullough.com"
         type="html" >
         <html>
             <body>
@@ -47,10 +48,10 @@
     <div id="body">
 
     <cfinclude template="header.cfm">
+                <h1>Landlord</h1>
     
         <article>
             <section id="landlord-text">
-                <h1>Landlord</h1>
                 <p>J & R Properties is committed to administrating all particulars associated with maintenance and management. We provide the following services:</p>
     
                 <p>Property Management:</p>

@@ -32,9 +32,9 @@
     <div id="body">
 
     <cfinclude template="header.cfm">
+                <h1>Application</h1>
     
         <article>
-                <h1>Application</h1>
                 <p>If  you are in renting a unit within our residential properties, please fill out  the application below or print out and mail in <a href="application.pdf" target="_blank">this form</a>. Upon completion, we will maintain in contact and  schedule a showing. If you are a business owner and are interested in renting a  commercial property, please contact us at <a href="mailto:email@example.com">email@example.com</a> for property inquiries. </p>
                
 

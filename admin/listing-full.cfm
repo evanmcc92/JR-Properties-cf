@@ -32,7 +32,6 @@
 
     <div id="body">
 
-        <article>
     <cfinclude template="header.cfm">
     <cfif UnitID contains'c'>
     
@@ -40,6 +39,7 @@
 select * from CommercialUnits WHERE UnitID = '#Form.UnitID#';
 </cfquery>
                 <cfoutput query="clistings">
+        <article>
 
                 <h1>Listing No. #UnitID#</h1>
 
@@ -67,6 +67,9 @@ select * from CommercialUnits WHERE UnitID = '#Form.UnitID#';
                         </tr>
                         <tr>
                             <td>#UnitName#</td>
+                        </tr>
+                        <tr>
+                            <td>#Vacant#</td>
                         </tr>
                         <tr>
                             <td>#DollarFormat(MonthlyPrice)# (monthly)</td>
@@ -119,6 +122,9 @@ select * from ResidentialUnits WHERE UnitID = '#Form.UnitID#';
                         </tr>
                         <tr>
                             <td>Date Available: #DateAvailable#</td>
+                        </tr>
+                        <tr>
+                            <td>#Vacant#</td>
                         </tr>
                         <tr>
                             <td>#Description#</td>

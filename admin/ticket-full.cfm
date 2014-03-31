@@ -46,9 +46,9 @@ select * from MaintenanceTickets WHERE TicketID = #Form.TicketID#;
 
     <cfinclude template="header.cfm">
                 <cfoutput query="tickets">
+                <h1>Ticket No. #TicketID#</h1>
     
-        <article>
-                <h1>Ticket No. #TicketID#</h1><form action="ticket-delete.cfm" method="post" id="delete-ticket">
+        <article><form action="ticket-delete.cfm" method="post" id="delete-ticket">
                     <input type="hidden" name="TicketID" value="#TicketID#">
                     <input value="Delete" type="submit" class="button">
                     </form></p>

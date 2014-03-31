@@ -5,8 +5,14 @@
     <title>Contact Us - J&R Properties</title>
     <link rel="stylesheet" type="text/css" href="../css/main.css">
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
-<link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    <style type="text/css">
 
+    #maps {
+        text-align: center;
+    }
+
+    </style>
     
 </head>
 
@@ -19,6 +25,7 @@
 <cfmail from="postmaster@evanamccullough.com" 
         to="#form.name# <#form.email#>"
         subject="Contact Us Message"
+        server= "smtp.evanamccullough.com"
         type="html" >
         <html>
             <body>
@@ -38,7 +45,7 @@
 <cfoutput>
     <script>
         function completeAlert() {
-            alert("Thank you #form.name# for sending an email, expect to hear something soon.");
+            alert("Gracias #form.name# para el env&iacute;o de un correo electr&oacute;nico, espera escuchar algo pronto.");
         }
     </script>
 </cfoutput>
@@ -48,21 +55,21 @@
     <div id="body">
 
     <cfinclude template="header.cfm">
+            <h1>Cont&aacute;ctenos</h1>
     
       <article>
-            <h1>Contact Us</h1>
-            <p>Text for contact us.</p>
-            <p>Our main office is located at ______. To contact us by  phone, please call &nbsp;_____</p>
-            <p>&lt;&lt;google map of location&gt;&gt;</p>
+            <p>Nuestra oficina principal est&aacute; ubicada en 52R Green Street Lynn, MA. Puede ponerse en contacto con nosotros por tel&eacute;fono, por favor llame al (781) 974-5790.</p>
             <p>&nbsp;</p>
-            <p>Feel free to fill out the following form for any general  inquiries you may have.</p>
+            <p id="maps"><iframe width="600" height="450" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=52R%20Green%20Street%20Lynn%2C%20MA%2002194&key=AIzaSyD-jE5-LQVhNq2pvw09RZSAaFUT5O6V0pk"></iframe></p>
+            <p>&nbsp;</p>
+            <p>No dude en rellenar el siguiente formulario para cualquier consulta generales que pueda tener.</p>
             <section id="emailform">
-                <form method="POST" action="landlord.cfm" onSubmit="completeAlert()">
-                    <p>Email: <input name="email" id="email" size="50" Required="Yes" Message="Please enter email."></p>
-                    <p>Name: <input name="name" id="name" size="50" Required="YES" Message="Please enter Complete Name."></p>
-                    <p>Message:<br>
-                       <textarea name="message" id="message" cols="43" rows="5" placeholder="Enter message here."></textarea></p>
-                    <p><input type="submit" value="Submit"> <input type="reset" value="Reset"></p> 
+                <form method="POST" action="contact.cfm" onSubmit="completeAlert()">
+                    <p>Email: <input name="email" id="email" size="50" Required="Yes" Message="Entre su email aqui."></p>
+                    <p>Nombre: <input name="name" id="name" size="50" Required="YES" Message="Entre su nombre aqui."></p>
+                    <p>Mensaje:<br>
+                       <textarea name="message" id="message" cols="43" rows="5" placeholder="Entre su mensaje aqui."></textarea></p>
+                    <p><input type="submit" value="Enviar"> <input type="reset" value="Reiniciar"></p> 
                 </form>
             </section>
       </article>

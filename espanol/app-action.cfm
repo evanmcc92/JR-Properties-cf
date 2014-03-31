@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html>
 <head>
@@ -34,9 +34,9 @@
 
     <cfinclude template="header.cfm">
     
+                <h1>Aplicaci&oacute;n</h1>
         <article>
-                <h1>Application</h1>
-                <p>Thank you for submitting your application. </p>
+                <p>Gracias por enviar su solicitud. </p>
                
 
             <section id="applicationform">
@@ -51,38 +51,38 @@
                           <td colspan="4">&nbsp;</td>
                         </tr>
                         <tr>
-                                <th colspan="4">Personal Information</th>
+                                <th colspan="4">Informaci&oacute;n Personal</th>
                         </tr>
                         <tr>
-                            <td><strong>First Name of Applicant:</strong></td>
+                          <td><strong>Nombre del solicitante*:</strong></td>
                             <td>#Form.ApplicantFirstName#</td>
-                            <td><strong>Last Name of Applicant:</strong></td>
+                            <td><strong>Apellido del Solicitante*:</strong></td>
                             <td>#Form.ApplicantLastName#</td>
                         </tr>
                         <tr>
-                            <td><strong>Present Address:</strong></td>
+                          <td><strong>Direcci&oacute;n Actual*:</strong></td>
                             <td colspan="3">#Form.PresentStAddress#</td>
                         </tr>
                         <tr>
-                            <td><strong>Present City:</strong></td>
+                          <td><strong>Presente Ciudad*:</strong></td>
                             <td>#Form.PresentCity#</td>
-                            <td><strong>Present State:</strong></td>
+                            <td><strong>Estado Actual*:</strong></td>
                             <td>#Form.PresentState#</td>
                         </tr>
                         <tr>
-                            <td><strong>Present Zip:</strong></td>
+                          <td><strong>Presente Zip-Code*:</strong></td>
                             <td>#Form.PresentZIP#</td>
-                            <td><strong>Present Phone Number:</strong></td>
+                            <td><strong>Presentar N&uacute;mero de tel&eacute;fono*:</strong></td>
                             <td>#Form.Phone#</td>
                         </tr>
                         <tr>
-                            <td><strong>Are You Married:</strong></td>
+                          <td><strong>¿Es usted casado?*:</strong></td>
                             <td>#Form.Married#</td>
-                                <td><strong>Spouse's Monthly Income:</strong></td>
+                            <td><strong>Ingresos Mensuales de la esposa:</strong></td>
                             <td>#Form.SpouseMonthlyIncome#></td>
                         </tr>
                         <tr>
-                            <td><strong>SSN:</strong></td>
+                          <td><strong>N&uacute;mero de Seguro Social*:</strong></td>
                             <td>#Form.SSN#</td>
                             <td colspan="2">&nbsp;</td>
                         </tr>
@@ -90,68 +90,68 @@
                                 <td colspan="4" class="break">&nbsp;</td>
                         </tr>
                         <tr>
-                                <th colspan="4">Landlord Information</th>
+                                <th colspan="4">Informaci&oacute;n de su Residencia Actual</th>
                         </tr>
                         <tr>
-                            <td><strong>Present Landlord's First Name:</strong></td>
+                          <td><strong>Nombre de su Arrendador Actual:</strong></td>
                             <td>#Form.PresentLandlordFirstName#</td>
-                            <td><strong>Present Landlord's Last Name:</strong></td>
+                            <td><strong>Apellido de su Arrendador Actual:</strong></td>
                             <td>#Form.PresentLandlordLastName#</td>
                         </tr>
                         <tr>
-                            <td><strong>Present Landlord's Phone Number:</strong></td>
+                          <td><strong>Número de tel&eacute;fono de su Arrendador Actual:</strong></td>
                             <td>#Form.PresentLandlordPhone#</td>
                         </tr>
                         <tr>
-                            <td><strong>Former Landlord's First Name:</strong></td>
+                          <td><strong>Nombre de su Arrendador Anterior:</strong></td>
                             <td>#Form.FormerLandlordFirstName#</td>
-                            <td><strong>Former Landlord's Last Name:</strong></td>
+                            <td><strong>Apellido de su Arrendador Anterior:</strong></td>
                             <td>#Form.FormerLandlordLastName#</td>
                         </tr>
                        <tr>
-                            <td><strong>Former Landlord's Phone Number:</strong></td>
+                         <td><strong>N&uacute;mero de tel&eacute;fono de su Arrendador Anterior:</strong></td>
                             <td>#Form.FormerLandlordPhone#</td>
                       </tr>
                         <tr>
                                 <td colspan="4" class="break">&nbsp;</td>
                         </tr>
                         <tr>
-                                <th colspan="4">Employment Information</th>
+                                <th colspan="4">Informaci&oacute;n de Empleo</th>
                         </tr>
                         <tr>
-                            <td><strong>Current Employer:</strong></td>
+                          <td><strong>Empleador Actual*:</strong></td>
                             <td>#Form.CurrentEmployer#</td>
-                                <td><strong>Current Employer's Phone Number:</strong></td>
+                            <td><strong>Tel&eacute;fono de su supervisor actual*:</strong></td>
                             <td>#Form.EmployerPhone#</td>
                         </tr>
                         <tr>
-                            <td><strong>Job Title:</strong></td>
+                          <td><strong>Titulo de Trabajo *:</strong></td>
                             <td>#Form.JobTitle#</td>
-                                <td><strong>Monthly Income:</strong></td>
+                            <td><strong>Ingreso Mensual *: $</strong></td>
                             <td>#DollarFormat(Form.MonthlyIncome)#</td>
                         </tr>
                         <tr>
                                 <td colspan="4" class="break">&nbsp;</td>
                         </tr>
                         <tr>
-                                <th colspan="4">References</th>
+                                <th colspan="4">Referencias</th>
                         </tr>
                         <tr>
-                            <td><strong>Personal Reference's Name:</strong></td>
+                            <td><strong>Nombre de Referencia Personal*:</strong></td>
                             <td>#Form.PersonalReferenceName#</td>
-                                <td><strong>Personal Reference's Phone Number:</strong></td>
+                                <td><strong>N&uacute;mero de tel&eacute;fono de Referencia Personal*:</strong></td>
                             <td>#Form.PersonalReferencePhone#</td>
                         </tr>
                         <tr>
                                 <td colspan="4" class="break">&nbsp;</td>
                         </tr>
                         <tr>
-                                <th colspan="4">Additional Information</th>
+                                <th colspan="4">Informaci&oacute;n Adicional</th>
                         </tr>
                         <tr>
-                            <td><strong>Number of Cars:</strong></td>
+                            <td><strong>N&uacute;mero de Carros*:</strong></td>
                             <td>#Form.NumberofCars#</td>
-                            <td><strong>Number of Pets:</strong></td>
+                            <td><strong>N&uacute;mero de Mascotas*:</strong></td>
                             <td>#Form.NumberofPets#</td>
                         </tr>
                         <tr>
