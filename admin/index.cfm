@@ -32,7 +32,7 @@
 			border-top: 1px solid silver;
 		}
 	</style>
-	</style>
+
 </head>
 
 <body>
@@ -121,32 +121,33 @@
         	<section id="finances-admin">
         		<h3>Monthly Incomes</h3>
                <!-- commercial total -->
-                <cfquery datasource="team3" name="commercial-all">
-                SELECT sum(MonthlyPrice) FROM CommercialUnits as commercialtotal;
+                <cfquery datasource="team3" name="commercialall">
+                	SELECT sum(MonthlyPrice) as commercialtotal FROM CommercialUnits ;
                 </cfquery>
                 <cfoutput>
-            	<p>Max income for commercial units: #commercial-all.commercialtotal#</p>
-                </cfoutput>
-               <!-- residential total -->
-                <cfquery datasource="team3" name="residential-all">
-                SELECT sum(MonthlyPrice) FROM ResidentialUnits as residentialtotal;
-                </cfquery>
-                <cfoutput>
-            	<p>Max income for residential units: #residential-all.residentialtotal#</p>
+            		<p>Max Income for Commercial Units: #DollarFormat(commercialall.commercialtotal)#</p>
                 </cfoutput>
                <!-- commercial total where vacant = false-->
                 <cfquery datasource="team3" name="commercialvacant">
-                SELECT sum(MonthlyPrice) FROM CommercialUnits WHERE Vacant='False' as commercialvacanttotal;
+                	SELECT sum(MonthlyPrice) as commercialvacanttotal FROM CommercialUnits WHERE Vacant=0 ;
                 </cfquery>
                 <cfoutput>
-            	<p>Current Monthly Residential Revenue: #commercialvacant.commercialvacanttotal#</p>
+            		<p>Current Monthly Commercial Revenue: #DollarFormat(commercialvacant.commercialvacanttotal)#</p>
+                </cfoutput>
+		<p>&nbsp;</p>
+               <!-- residential total -->
+                <cfquery datasource="team3" name="residentialall">
+                	SELECT sum(MonthlyPrice) as residentialtotal FROM ResidentialUnits ;
+                </cfquery>
+                <cfoutput>
+            		<p>Max Income for Residential Units: #DollarFormat(residentialall.residentialtotal)#</p>
                 </cfoutput>
                <!-- residential total -->
                 <cfquery datasource="team3" name="residentialvacant">
-                SELECT sum(MonthlyPrice) FROM ResidentialUnits WHERE Vacant='False' as residentialvacanttotal;
+               	 	SELECT sum(MonthlyPrice) as residentialvacanttotal FROM ResidentialUnits WHERE Vacant=0;
                 </cfquery>
-                <cfoutput>
-            	<p>Current Monthly Residential Revenue: #residentialvacant.residentialvacanttotal#</p>
+                	<cfoutput>
+            	<p>Current Monthly Residential Revenue: #DollarFormat(residentialvacant.residentialvacanttotal)#</p>
                 </cfoutput>
             </section>
         </article>

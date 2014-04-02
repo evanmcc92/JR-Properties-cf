@@ -56,7 +56,7 @@ select * from ResidentialUnits where City = 'Revere'
                             <td>#NoBeds# Bed & #NoBaths# Bath</td>
                         </tr>
                         <tr>
-                            <td>Date Available: #DATEFORMAT(DateAvailable, "m/d/yyyy")#</td>
+                            <td>Date Available: #DateAvailable#</td>
                         </tr>
                         <tr>
                             <td>#Description#</td>
@@ -83,7 +83,7 @@ select * from ResidentialUnits where City = 'Revere'
                             <td>#NoBeds# Bed & #NoBaths# Bath</td>
                         </tr>
                         <tr>
-                            <td>Date Available: #DATEFORMAT(DateAvailable, "m/d/yyyy")#</td>
+                            <td>Date Available: #DateAvailable#</td>
                         </tr>
                         <tr>
                             <td>#Description#</td>
@@ -110,7 +110,7 @@ select * from ResidentialUnits where City = 'Revere'
                             <td>#NoBeds# Bed & #NoBaths# Bath</td>
                         </tr>
                         <tr>
-                            <td>Date Available: #DATEFORMAT(DateAvailable, "m/d/yyyy")#</td>
+                            <td>Date Available: #DateAvailable#</td>
                         </tr>
                         <tr>
                             <td>#Description#</td>
@@ -137,7 +137,7 @@ select * from ResidentialUnits where City = 'Revere'
                             <td>#NoBeds# Bed & #NoBaths# Bath</td>
                         </tr>
                         <tr>
-                            <td>Date Available: #DATEFORMAT(DateAvailable, "m/d/yyyy")#</td>
+                            <td>Date Available: #DateAvailable#</td>
                         </tr>
                         <tr>
                             <td>#Description#</td>

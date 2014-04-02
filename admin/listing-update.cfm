@@ -115,10 +115,16 @@
                             </tr>
                             <tr>
                                 <td><strong>Description*:</strong></td>
-                                <td><textarea name="Description" id="Description" value="#Description#" ></textarea></td>
+                                <td><textarea name="Description" id="Description">#Description#</textarea></td>
                             </tr>
                             <tr>
-                                <td colspan="2"><input type="submit" value="Submit" class="button"></td>
+                                <td><input type="submit" value="Submit" class="button"></td>
+				<td><form action="listing-delete.cfm" method="post" id="delete-ticket">
+			<form action="" method="post">
+                        <input type="hidden" name="UnitID" value="#UnitID#">
+                        <input value="Delete" type="submit" class="button">
+                	</form>
+			</td>
                             </tr>
                     		<tr>
                         		<td colspan="2" class="break">&nbsp;</td>
@@ -175,16 +181,22 @@ select * from CommercialUnits WHERE UnitID = '#Form.UnitID#';
                             </tr>
                             <tr>
                                 <td><strong>Description*:</strong></td>
-                                <td><textarea name="Description" id="Description" value="#Description#" ></textarea></td>
+                                <td><textarea name="Description" id="Description">#Description#</textarea></td>
                             </tr>
                             <tr>
-                                <td colspan="2"><input type="submit" value="Submit" class="button"></td>
+                                <td><input type="submit" value="Submit" class="button">
+                    </form></td>
+				<td><form action="listing-delete.cfm" method="post" id="delete-ticket">
+			<form action="" method="post">
+                        <input type="hidden" name="UnitID" value="#UnitID#">
+                        <input value="Delete" type="submit" class="button">
+                	</form>
+			</td>
                             </tr>
                     		<tr>
                         		<td colspan="2" class="break">&nbsp;</td>
                             </tr>
                         </table>
-                    </form>
                     </cfoutput>
                     </cfif>
                     

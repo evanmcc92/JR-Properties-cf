@@ -45,13 +45,12 @@ select * from CommercialUnits WHERE UnitID = '#Form.UnitID#';
 
             <section id="applicationform">
                 	<p><form action="listing-delete.cfm" method="post" id="delete-ticket">
-                      <p>
+			<form action="" method="post">
                         <input type="hidden" name="UnitID" value="#UnitID#">
                         <input value="Delete" type="submit" class="button">
-                      </p>
-                      <p>
                 	</form>
-                	<form action="listing-update.cfm" method="post">
+			</p>
+                	<p><form action="listing-update.cfm" method="post">
                     <input type="hidden" name="UnitID" value="#UnitID#">
                     <input value="Edit" type="submit" class="button">
                     </form></p>
@@ -94,13 +93,12 @@ select * from ResidentialUnits WHERE UnitID = '#Form.UnitID#';
             <section id="applicationform">
                 <h1>Listing No. #UnitID#</h1>
                 	<p><form action="listing-delete.cfm" method="post" id="delete-ticket">
-                      <p>
+			<form action="" method="post">
                         <input type="hidden" name="UnitID" value="#UnitID#">
                         <input value="Delete" type="submit" class="button">
-                      </p>
-                      <p>
                 	</form>
-                	<form action="listing-update.cfm" method="post">
+			</p>
+                	<p><form action="listing-update.cfm" method="post">
                     <input type="hidden" name="UnitID" value="#UnitID#">
                     <input value="Edit" type="submit" class="button">
                     </form></p>

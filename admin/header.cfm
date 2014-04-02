@@ -1,9 +1,9 @@
 <header id="top">
   <figure id="logo"><a href="../index.cfm"><img src="../img/logo.png" alt="J&R Properties Logo"/></a></figure>
-  <address>
-    53 Jamie Lane<br>
-    Stoughton MA 02072<br><br>
-    (781) 913-6081
+  <address>52R Green Street<br>
+	Lynn, MA 02194<br><br>
+
+	(781) 974-5790
   </address>
   <nav>
       <ul id="navbar">

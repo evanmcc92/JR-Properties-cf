@@ -22,14 +22,8 @@
       <li>The  security procedures in place to protect the misuse of your information.</li>
       <li>How  you can correct any inaccuracies in the information. </li>
     </ul>
-        <aside id="aside">
-<ul>
-                <li><a href="#info">Information Collection, Use, and Sharing</a></li>
-                <li><a href="#access">Your Access to and Control Over Information</a></li>
-<li><a href="#security">Security</a></li>
-            </ul>
-        </aside>
-        <article id="article">
+    <p>If you feel that we are not abiding by this privacy policy, you should contact us immediately via email <a href="mailto:perryjames249@gmail.com">perryjames249@gmail.com </a></p>
+        <article>
             <section id="info">
                 <h1>Information  Collection, Use, and Sharing</h1>
                 <p>We  are the sole owners of the information collected on this site. We only have  access to/collect information that you voluntarily give us via email or  application forms from you. We will not sell or rent this information to  anyone. </p>
@@ -51,7 +45,7 @@
 <p> Wherever  we collect sensitive information, that information is encrypted and transmitted  to us in a secure way. You can verify this by looking for a closed lock icon at  the bottom of your web browser, or looking for &quot;https&quot; at the  beginning of the address of the web page.</p>
 <p> While  we use encryption to protect sensitive information transmitted online, we also  protect your information offline. Only employees who need the information to  perform a specific job are granted access to personally identifiable  information. The computers/servers in which we store personally identifiable  information are kept in a secure environment.</p>
           </section>
-        If you feel that we are not abiding by this privacy policy, you should contact us immediately via email <a href="mailto:perryjames249@gmail.com">perryjames249@gmail.com </a></article>
+        </article>
 <cfinclude template="footer.cfm">
 
   

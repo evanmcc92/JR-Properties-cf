@@ -22,14 +22,8 @@
       <li>Los procedimientos de seguridad para proteger el mal uso de su informaci&oacute;n.</li>
       <li>C&oacute;mo puede corregir cualquier inexactitud en la informaci&oacute;n.</li>
     </ul>
-        <aside id="aside">
-          <ul>
-            <li><a href="#info">Sobre la recopilaci&oacute;n, uso y compartir</a></li>
-            <li><a href="#access">Su acceso y control sobre la informaci&oacute;n</a></li>
-            <li><a href="#security">Seguridad</a></li>
-          </ul>
-        </aside>
-        <article id="article">
+        <p>Si usted siente que no estamos cumpliendo con esta pol&iacute;tica de privacidad, usted debe ponerse en contacto con nosotros inmediatamente por correo electr&oacute;nico <a href="mailto:perryjames249@gmail.com">perryjames249@gmail.com </a></p>
+                <article>
             <section id="info">
                 <h1>Sobre la recopilaci&oacute;n, uso y compartir</h1>
                 <p>Somos los &uacute;nicos due&ntilde;os de la informaci&oacute;n recogida en este sitio web. S&oacute;lo tenemos acceso a la informaci&oacute;n que usted nos proporcione voluntariamente a trav&eacute;s de correo electr&oacute;nico o los formularios de solicitud de usted. No venderemos ni alquilaremos esta informaci&oacute;n a nadie.</p>
@@ -51,7 +45,7 @@
 <p>Dondequiera que recopilemos informaci&oacute;n delicada , esa informaci&oacute;n es encriptada y transmitida a nosotros de una manera segura.</p>
 <p>S&oacute;lo los empleados que necesitan la informaci&oacute;n para realizar un trabajo espec&iacute;fico se les conceda acceso a la informaci&oacute;n de identificaci&oacute;n personal. Las computadoras / servidores en los que almacenamos informaci&oacute;n personal se mantienen en un entorno seguro.</p>
           </section>
-        <p>Si usted siente que no estamos cumpliendo con esta pol&iacute;tica de privacidad, usted debe ponerse en contacto con nosotros inmediatamente por correo electr&oacute;nico <a href="mailto:perryjames249@gmail.com">perryjames249@gmail.com </a></p></article>
+        </article>
 <cfinclude template="footer.cfm">
 
   

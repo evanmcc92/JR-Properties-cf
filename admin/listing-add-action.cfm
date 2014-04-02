@@ -44,11 +44,17 @@
     
         <article>
             <h3>Listing Added</h3>
-</article>
+
  
             <section id="listingform">
-            	<cfif IsDefined("Form.NoBeds")>
-                	<cfoutput>
+            	<cfif IsDefined("Form.NoBeds")>                	
+            	<cfoutput>
+            		            	<cfif IsDefined("Form.Vacant")>
+            		            		<cfset Vacant = 1>
+            		            	<cfelse>
+            		            		<cfset Vacant = 0>
+            		          		</cfif >
+
                     <p><a href="listing-all.cfm">All Listings</a></p>
                     	<table>
                             <tr>
@@ -56,51 +62,51 @@
                             </tr>
                             <tr>
                                 <td><strong>Unit ID*:</strong></td>
-                                <td>#UnitID#</td>
+                                <td>#Form.UnitID#</td>
                             </tr>
                             <tr>
                                 <td><strong>Unit Name:</strong></td>
-                                <td>#UnitName#</td>
+                                <td>#Form.UnitName#</td>
                             </tr>
                             <tr>
                                 <td><strong>Vacant:</strong></td>
-                                <td>#Vacant#"</td>
+                                <td>#YesNoFormat(Vacant)#</td>
                             </tr>
                             <tr>
                                 <td><strong>Property ID*:</strong></td>
-                                <td>#PropertyID#</td>
+                                <td>#Form.PropertyID#</td>
                             </tr>
                             <tr>
                                 <td><strong>Street Address*:</strong></td>
-                                <td>#StreetAddress#</td>
+                                <td>#Form.StreetAddress#</td>
                             </tr>
                             <tr>
                                 <td><strong>City*:</strong></td>
-                                <td>#City#</td>
+                                <td>#Form.City#</td>
                             </tr>
                             <tr>
                                 <td><strong>State*:</strong></td>
-                                <td>#State#</td>
+                                <td>#Form.State#</td>
                             </tr>
                             <tr>
                                 <td><strong>Date Available*:</strong></td>
-                                <td>#DateAvailable#</td>
+                                <td>#Form.DateAvailable#</td>
                             </tr>
                             <tr>
                                 <td><strong>Number of Bedrooms:</strong></td>
-                                <td>#NoBeds#</td>
+                                <td>#Form.NoBeds#</td>
                             </tr>
                             <tr>
                         		<td><strong>Number of Bathrooms:</strong></td>
-                                <td>#NoBaths#</td>
+                                <td>#Form.NoBaths#</td>
                             </tr>
                             <tr>
                                 <td><strong>Monthly Price*:</strong></td>
-                                <td>#MonthlyPrice#</td>
+                                <td>#Form.MonthlyPrice#</td>
                             </tr>
                             <tr>
                                 <td><strong>Description*:</strong></td>
-                                <td>#Description#</td>
+                                <td>#Form.Description#</td>
                             </tr>
                     		<tr>
                         		<td colspan="2" class="break">&nbsp;</td>
@@ -108,8 +114,13 @@
                         </table>
                     </cfoutput>
     				<cfinsert datasource="team3" tablename="ResidentialUnits" >
-                <cfelse>
-                	<cfoutput>
+                <cfelse>                	
+            	<cfoutput>
+            		            	<cfif IsDefined("Form.Vacant")>
+            		            		<cfset Vacant = 1>
+            		            	<cfelse>
+            		            		<cfset Vacant = 0>
+            		          		</cfif >
                     <p><a href="listing-all.cfm">All Listings</a></p>
                     	<table>
                             <tr>
@@ -117,43 +128,43 @@
                             </tr>
                             <tr>
                                 <td><strong>Unit ID*:</strong></td>
-                                <td>#UnitID#</td>
+                                <td>#Form.UnitID#</td>
                             </tr>
                             <tr>
                                 <td><strong>Unit Name:</strong></td>
-                                <td>#UnitName#</td>
+                                <td>#Form.UnitName#</td>
                             </tr>
                             <tr>
                                 <td><strong>Vacant:</strong></td>
-                                <td>#Vacant#"</td>
+                                <td>#YesNoFormat(Vacant)#</td>
                             </tr>
                             <tr>
                                 <td><strong>Property ID*:</strong></td>
-                                <td>#PropertyID#</td>
+                                <td>#Form.PropertyID#</td>
                             </tr>
                             <tr>
                                 <td><strong>Street Address*:</strong></td>
-                                <td>#StreetAddress#</td>
+                                <td>#Form.StreetAddress#</td>
                             </tr>
                             <tr>
                                 <td><strong>City*:</strong></td>
-                                <td>#City#</td>
+                                <td>#Form.City#</td>
                             </tr>
                             <tr>
                                 <td><strong>State*:</strong></td>
-                                <td>#State#</td>
+                                <td>#Form.State#</td>
                             </tr>
                             <tr>
                                 <td><strong>Date Available*:</strong></td>
-                                <td>#DateAvailable#</td>
+                                <td>#Form.DateAvailable#</td>
                             </tr>
                             <tr>
                                 <td><strong>Monthly Price*:</strong></td>
-                                <td>#MonthlyPrice#</td>
+                                <td>#Form.MonthlyPrice#</td>
                             </tr>
                             <tr>
                                 <td><strong>Description*:</strong></td>
-                                <td>#Description#</td>
+                                <td>#Form.Description#</td>
                             </tr>
                     		<tr>
                         		<td colspan="2" class="break">&nbsp;</td>

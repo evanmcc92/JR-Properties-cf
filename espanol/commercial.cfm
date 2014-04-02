@@ -40,7 +40,7 @@ select * from CommercialUnits
                     <td>#DollarFormat(MonthlyPrice)# (monthly)</td>
                 </tr>
                 <tr>
-                    <td>Date Available: #DATEFORMAT(DateAvailable, "m/d/yyyy")#</td>
+                    <td>Date Available: #DateAvailable#</td>
                 </tr>
                 <tr>
                     <td>#Description#</td>

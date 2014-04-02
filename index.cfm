@@ -47,18 +47,16 @@
     <cfinclude template="header.cfm">
 <h1>J&amp;R Properties</h1>
 <h3>About Us</h3>
-            <p>J & R Properties is a property management firm that administrates commercial and residential properties within the Greater Boston area. </p>
-            <p>We are committed to providing expert property management services to building owners and residents. </p>
+            <p>J&R Properties is a property management firm that administrates commercial and residential properties within the Greater Boston area. </p>
+            <p>We are committed to providing expert property management services to building owners and residents.</p>
       <p>Our vision is to create strong relationships with clients, residents and the local community.</p>
-            <p> Through hard work and dedication, J & R Properties has successfully operated by its vision since 1987.</p>
+            <p>Through hard work and dedication, J&R Properties has successfully operated by its vision since 1987.</p>
             <p>&nbsp;</p>
 
         
         <article>
             <cfquery datasource="team3" name="unit_id">
-            SELECT StreetAddress FROM ResidentialUnits
-            UNION
-            SELECT StreetAddress FROM CommercialUnits
+            SELECT StreetAddress FROM Properties
             </cfquery>
   <div class="container">
     <div id="slides">

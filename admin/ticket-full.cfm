@@ -48,22 +48,26 @@ select * from MaintenanceTickets WHERE TicketID = #Form.TicketID#;
                 <cfoutput query="tickets">
                 <h1>Ticket No. #TicketID#</h1>
     
-        <article><form action="ticket-delete.cfm" method="post" id="delete-ticket">
+        <article>
+		<p><form action="ticket-delete.cfm" method="post" id="delete-ticket">
                     <input type="hidden" name="TicketID" value="#TicketID#">
                     <input value="Delete" type="submit" class="button">
-                    </form></p>
+                    </form>
+		</p>
                     <cfif Resolved eq 'Yes'>
                 <p><form action="ticket-update.cfm" method="post">
                     <input type="hidden" name="TicketID" value="#TicketID#">
-                    <input type="hidden" name="Resolved" value="N">
+                    <input type="hidden" name="Resolved" value="0">
                     <input value="Issue is not resolved" type="submit" class="button">
-                    </form></p>
+                    </form>
+		</p>
                     <cfelse>
                 <p><form action="ticket-update.cfm" method="post">
                     <input type="hidden" name="TicketID" value="#TicketID#">
-                    <input type="hidden" name="Resolved" value="Y">
+                    <input type="hidden" name="Resolved" value="1">
                     <input value="Issue is resolved" type="submit" class="button">
-                    </form></p>
+                    </form>
+		</p>
                     </cfif>
                     <p><a href="ticket-all.cfm">All Tickets</a></p>
                     <p>&nbsp;</p>

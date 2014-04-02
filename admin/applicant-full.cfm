@@ -49,9 +49,11 @@ select * from Applications WHERE ApplicationID = #Form.ApplicationID#;
 
             <section id="applicationform">
                 <cfoutput query="applications">
-                <p>
+                <p><form action ="applicant-delete.cfm" method="post">
                   <input type="hidden" name="ApplicationID" value="#ApplicationID#">
-                    <input value="Delete" type="submit" class="button">
+                  <input value="Delete" type="submit" class="button">
+		</form>
+		</p>
                   <p><a href="applicant-all.cfm">All Applications</a>                                  
                     <p>&nbsp;</p>
                     <table>

@@ -45,7 +45,7 @@ select * from Applications WHERE ApplicationID = #Form.ApplicationID#;
 DELETE FROM Applications WHERE ApplicationID = #Form.ApplicationID#;
 </cfquery>
     
-        <h1>Applications</h1>
+        <h1>Application</h1>
         <cfoutput query="Application">
             
 <h3>The following application has been deleted.</h3> 
