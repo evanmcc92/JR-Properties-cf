@@ -3,7 +3,7 @@
 <html>
 <head>
 <cfoutput>
-    <title>Listing #UnitID# Updated  - J&R Properties</title>
+    <title>Listing #UnitID# Updated - J&R Properties</title>
     </cfoutput>
     <link rel="stylesheet" type="text/css" href="../css/main.css">
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
@@ -13,7 +13,7 @@
 		#navbar li {
 			list-style-type: none;
 			display: block;
-			padding: 5px 25px;
+			padding: 5px 10px;
 			float:left;
 		}
 		table {

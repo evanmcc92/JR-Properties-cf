@@ -13,7 +13,7 @@
 		#navbar li {
 			list-style-type: none;
 			display: block;
-			padding: 5px 25px;
+			padding: 5px 10px;
 			float:left;
 		}
 		table {
@@ -45,7 +45,9 @@
                 <h1>Listing Updated</h1>
     
         <article>
-</article> 
+	    <cfquery datasource="team3" name="unit_id">
+            SELECT * from Properties
+            </cfquery>
             <section id="listingform">
             	<cfif #Form.UnitID# contains "R" >
                     <cfquery datasource="team3" name="residential">
@@ -72,7 +74,12 @@
                             </tr>
                             <tr>
                                 <td><strong>Property ID*:</strong></td>
-                                <td><input name="PropertyID" id="PropertyID" type="text"value="#PropertyID#" ></td>
+                                <td><select name="PropertyID" id="PropertyID">
+                    				<option value="#PropertyID#">Current - #PropertyID#</option>
+                    			<cfloop query="unit_id">
+                    				<option value="#PropertyID#">#PropertyID#</option>
+                    			</cfloop>
+                    		</select></td>
                             </tr>
                             <tr>
                                 <td><strong>Street Address*:</strong></td>
@@ -93,6 +100,7 @@
                             <tr>
                                 <td><strong>Number of Bedrooms:</strong></td>
                                 <td> <select name="NoBeds" id="NoBeds">
+                    				<option value="#NoBeds#">Current - #NoBeds#</option>
                                           <option value="Studio">Studio</option>
                                           <option value="1">1</option>
                                           <option value="2">2</option>
@@ -103,6 +111,7 @@
                             <tr>
                         		<td><strong>Number of Bathrooms:</strong></td>
                                 <td><select name="NoBaths" id="NoBaths">
+                    				<option value="#NoBaths#">Current - #NoBaths#</option>
                                         <option value="1/2">1/2</option>
                                         <option value="1">1</option>
                                         <option value="1 1/2">1 1/2</option>
@@ -117,14 +126,14 @@
                                 <td><strong>Description*:</strong></td>
                                 <td><textarea name="Description" id="Description">#Description#</textarea></td>
                             </tr>
-                            <tr>
-                                <td><input type="submit" value="Submit" class="button"></td>
-				<td><form action="listing-delete.cfm" method="post" id="delete-ticket">
+                            <tr><td><form action="listing-delete.cfm" method="post" id="delete-ticket">
 			<form action="" method="post">
                         <input type="hidden" name="UnitID" value="#UnitID#">
                         <input value="Delete" type="submit" class="button">
                 	</form>
 			</td>
+                                <td><input type="submit" value="Submit" class="button"></td>
+				
                             </tr>
                     		<tr>
                         		<td colspan="2" class="break">&nbsp;</td>
@@ -157,7 +166,12 @@ select * from CommercialUnits WHERE UnitID = '#Form.UnitID#';
                             </tr>
                             <tr>
                                 <td><strong>Property ID*:</strong></td>
-                                <td><input name="PropertyID" id="PropertyID" type="text"value="#PropertyID#" ></td>
+                                <td><select name="PropertyID" id="PropertyID">
+                    				<option value="#PropertyID#">Current - #PropertyID#</option>
+                    			<cfloop query="unit_id">
+                    				<option value="#PropertyID#">#PropertyID#</option>
+                    			</cfloop>
+                    		</select></td>
                             </tr>
                             <tr>
                                 <td><strong>Street Address*:</strong></td>
@@ -184,14 +198,15 @@ select * from CommercialUnits WHERE UnitID = '#Form.UnitID#';
                                 <td><textarea name="Description" id="Description">#Description#</textarea></td>
                             </tr>
                             <tr>
-                                <td><input type="submit" value="Submit" class="button">
-                    </form></td>
 				<td><form action="listing-delete.cfm" method="post" id="delete-ticket">
 			<form action="" method="post">
                         <input type="hidden" name="UnitID" value="#UnitID#">
                         <input value="Delete" type="submit" class="button">
                 	</form>
 			</td>
+                                <td><input type="submit" value="Submit" class="button">
+                    </form></td>
+				
                             </tr>
                     		<tr>
                         		<td colspan="2" class="break">&nbsp;</td>

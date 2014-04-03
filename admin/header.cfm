@@ -11,6 +11,8 @@
           <li><a href="listing-all.cfm">Listings</a></li>
           <li><a href="ticket-all.cfm">Maintenance Requests</a></li>
           <li><a href="applicant-all.cfm">Applications</a></li>
+          <li><a href="tenant-all.cfm">Tenants</a></li>
+          <li><a href="property-all.cfm">Properties</a></li>
           <li><a href="../index.cfm">Public Site</a></li>
       </ul>
   </nav>

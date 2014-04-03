@@ -2,7 +2,9 @@
 
 <html>
 <head>
-    <title>Ticket Deleted - J&R Properties</title>
+	<cfoutput>
+    <title>Tenant #TenantID# - J&R Properties</title>
+    </cfoutput>
     <link rel="stylesheet" type="text/css" href="../css/main.css">
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="../img/favicon.ico" type="image/x-icon">
@@ -31,6 +33,7 @@
 			border-top: 1px solid silver;
 		}
 	</style>
+	</style>
     
 </head>
 
@@ -40,31 +43,32 @@
     <div id="body">
 
     <cfinclude template="header.cfm">
-<cfquery datasource="team3" name="applications">
-select * from MaintenanceTickets WHERE TicketID = #Form.TicketID#;
-</cfquery>
-<cfquery datasource="team3" name="DeleteApplication"> 
-DELETE FROM MaintenanceTickets WHERE TicketID = #Form.TicketID#;
-</cfquery>
-                <cfoutput query="applications">
-                <h1>Ticket No. #TicketID#</h1>
     
+<cfquery datasource="team3" name="clistings">
+select * from Tenants WHERE TenantID = '#Form.TenantID#';
+</cfquery>
+                <cfoutput query="clistings">
         <article>
-<h3>The following ticket has been deleted.</h3> 
-               
+
+                <h1>Tenant #TenantID#</h1>
 
             <section id="applicationform">
-                    <p><a href="ticket-all.cfm">All Tickets</a></p>
+                	<p><form action="tenant-delete.cfm" method="post" id="delete-ticket">
+			<form action="" method="post">
+                        <input type="hidden" name="TenantID" value="#TenantID#">
+                        <input value="Delete" type="submit" class="button">
+                	</form>
+			</p>
+                	<p><form action="tenant-update.cfm" method="post">
+                    <input type="hidden" name="TenantID" value="#TenantID#">
+                    <input value="Edit" type="submit" class="button">
+                    </form></p>
+                    <p><a href="tenant-all.cfm">All Tenants</a></p>
                     <p>&nbsp;</p>
-                    <table>
+                
+                    <table id="#TenantID#">
                         <tr>
-                          <td colspan="4">#DATEFORMAT(IssueDate, "m/d/yyyy")#</td>
-                      </tr>
-                        <tr>
-                          <td colspan="4">&nbsp;</td>
-                        </tr>
-                        <tr>
-                                <th colspan="4">Ticket No. #TicketID#</th>
+                                <th colspan="4">Tenant #TenantID#</th>
                         </tr>
                         <tr>
                             <td><b>First Name:</b></td>
@@ -73,37 +77,32 @@ DELETE FROM MaintenanceTickets WHERE TicketID = #Form.TicketID#;
                             <td>#TenantLastName#</td>
                         </tr>
                         <tr>
+                            <td><strong>Phone Number:</strong></td>
+                            <td>#TenantPhone#</td>
                             <td><strong>Unit ID:</strong></td>
                             <td>#UnitID#</td>
-                            <td colspan="2">&nbsp;</td>
                         </tr>
                         <tr>
-                            <td><b>Plumbing:</b></td>
-                            <td>#YesNoFormat(Plumbing)#</td>
-                            <td><strong>Electric:</strong></td>
-                            <td>#YesNoFormat(Electric)#</td>
-                        </tr>
-                        <tr>
-                            <td><b>Other:</b></td>
-                            <td>#YesNoFormat(Other)#</td>
+                            <td><b>Monthly Rent:</b></td>
+                            <td>#DollarFormat(MonthlyRent)#</td>
                             <td colspan="2">&nbsp;</td>
                         </tr>
                         <tr>
                                 <td colspan="4">&nbsp;</td>
                         </tr>
                         <tr>
-                            <td colspan="4"><b>Description:</b></td>
-                        </tr>
-                        <tr>
-                            <td colspan="4">#Description#</td>
-                            <td>&nbsp;</td>
+                            <td><b>Lease Start:</b></td>
+                            <td>#LeaseStart#</td>
+                            <td><b>Lease End:</b></td>
+                            <td>#LeaseEnd#</td>
                         </tr>
                         <tr>
                              <td colspan="4" class="break">&nbsp;</td>
                         </tr>
                   </table>
-
+                    </section>
               </cfoutput>
+
               
             </section>
         </article>

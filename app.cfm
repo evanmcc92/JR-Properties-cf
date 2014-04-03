@@ -205,7 +205,7 @@
                         <tr>
                             <td><strong>Number of Cars*:</strong></td>
                             <td><select name="NumberofCars"  required  >
-                            <cfloop from="0" to="10" index="i">
+                            <cfloop from="0" to="5" index="i">
                                                                                                                                 <cfoutput>
                                                 <option value="#i#">#i#</option>
                                 </cfoutput>
@@ -213,7 +213,7 @@
                             </select></td>
                                 <td><strong>Number of Pets*:</strong></td>
                             <td><select name="NumberofPets"  required  >
-                            <cfloop from="0" to="10" index="i">
+                            <cfloop from="0" to="5" index="i">
                                                                                                                                 <cfoutput>
                                                 <option value="#i#">#i#</option>
                                 </cfoutput>
@@ -224,8 +224,8 @@
                                 <td colspan="4" class="break">&nbsp;</td>
                         </tr>
                         <tr>
-                            <td colspan="2"><input type="submit" value="Submit" class="button"></td>
                             <td colspan="2"><input type="reset" value="Reset" class="button"></td>
+                            <td colspan="2"><input type="submit" value="Submit" class="button"></td>
                         </tr>
                     </table>
 

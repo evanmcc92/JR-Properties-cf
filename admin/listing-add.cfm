@@ -11,7 +11,7 @@
 		#navbar li {
 			list-style-type: none;
 			display: block;
-			padding: 5px 25px;
+			padding: 5px 10px;
 			float:left;
 		}
 		table {
@@ -38,14 +38,24 @@
     			document.getElementById("residentialform").style.display = 'none';
 			var commercialresidential = prompt("Select Commerical or Residential");
 			
-			if (commercialresidential == "commercial") {
+			if (commercialresidential == "commercial" || commercialresidential == "Commercial") {
 				//display none on residential
     			document.getElementById("commercialform").style.display = 'block';
-			} else if (commercialresidential == "residential"){
+			} else if (commercialresidential == "residential" || commercialresidential == "Residential"){
 				//display none on commercial
     			document.getElementById("residentialform").style.display = 'block';
 			} else {
 				prompt("Wrong Submission\nSelect Commerical or Residential");
+				
+				if (commercialresidential == "commercial" || commercialresidential == "Commercial") {
+					//display none on residential
+    					document.getElementById("commercialform").style.display = 'block';
+				} else if (commercialresidential == "residential" || commercialresidential == "Residential"){
+					//display none on commercial
+    					document.getElementById("residentialform").style.display = 'block';
+				} else {
+					prompt("Wrong Submission\nSelect Commerical or Residential");
+				}
 			}
 			
 			
@@ -64,6 +74,9 @@
                 <h1>Add A Listing</h1>
     
         <article>
+		<cfquery datasource="team3" name="unit_id">
+            SELECT * from Properties
+            </cfquery>
  
             <section id="residentialform">
                     <p><a href="listing-all.cfm">All Listings</a></p>
@@ -74,7 +87,7 @@
                             </tr>
                             <tr>
                                 <td><strong>Unit ID*:</strong></td>
-                                <td><input name="UnitID" id="UnitID" type="text" required ></td>
+                                <td><input name="UnitID" id="UnitID" type="text" required placeholder="Rxxx"></td>
                             </tr>
                             <tr>
                                 <td><strong>Unit Name:</strong></td>
@@ -86,7 +99,13 @@
                             </tr>
                             <tr>
                                 <td><strong>Property ID*:</strong></td>
-                                <td><input name="PropertyID" id="PropertyID" type="text" ></td>
+                                <td><select name="PropertyID" id="PropertyID">
+					<cfoutput>
+                    			<cfloop query="unit_id">
+                    				<option value="#PropertyID#">#PropertyID#</option>
+                    			</cfloop>
+					</cfoutput>
+                    		</select></td>
                             </tr>
                             <tr>
                                 <td><strong>Street Address*:</strong></td>
@@ -98,7 +117,60 @@
                             </tr>
                             <tr>
                                 <td><strong>State*:</strong></td>
-                                <td><input name="State" id="State" type="text" ></td>
+                                <td><select name="State" id="State">
+				<option>Select a State</option>
+                                <option value="AL">Alabama</option>
+                                <option value="AK">Alaska</option>
+                                <option value="AZ">Arizona</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="CA">California</option>
+                                <option value="CO">Colorado</option>
+                                <option value="CT">Connecticut</option>
+                                <option value="DE">Delaware</option>
+                                <option value="DC">District Of Columbia</option>
+                                <option value="FL">Florida</option>
+                                <option value="GA">Georgia</option>
+                                <option value="HI">Hawaii</option>
+                                <option value="ID">Idaho</option>
+                                <option value="IL">Illinois</option>
+                                <option value="IN">Indiana</option>
+                                <option value="IA">Iowa</option>
+                                <option value="KS">Kansas</option>
+                                <option value="KY">Kentucky</option>
+                                <option value="LA">Louisiana</option>
+                                <option value="ME">Maine</option>
+                                <option value="MD">Maryland</option>
+                                <option value="MA">Massachusetts</option>
+                                <option value="MI">Michigan</option>
+                                <option value="MN">Minnesota</option>
+                                <option value="MS">Mississippi</option>
+                                <option value="MO">Missouri</option>
+                                <option value="MT">Montana</option>
+                                <option value="NE">Nebraska</option>
+                                <option value="NV">Nevada</option>
+                                <option value="NH">New Hampshire</option>
+                                <option value="NJ">New Jersey</option>
+                                <option value="NM">New Mexico</option>
+                                <option value="NY">New York</option>
+                                <option value="NC">North Carolina</option>
+                                <option value="ND">North Dakota</option>
+                                <option value="OH">Ohio</option>
+                                <option value="OK">Oklahoma</option>
+                                <option value="OR">Oregon</option>
+                                <option value="PA">Pennsylvania</option>
+                                <option value="RI">Rhode Island</option>
+                                <option value="SC">South Carolina</option>
+                                <option value="SD">South Dakota</option>
+                                <option value="TN">Tennessee</option>
+                                <option value="TX">Texas</option>
+                                <option value="UT">Utah</option>
+                                <option value="VT">Vermont</option>
+                                <option value="VA">Virginia</option>
+                                <option value="WA">Washington</option>
+                                <option value="WV">West Virginia</option>
+                                <option value="WI">Wisconsin</option>
+                                <option value="WY">Wyoming</option>
+                            </select></td>
                             </tr>
                             <tr>
                                 <td><strong>Date Available*:</strong></td>
@@ -128,7 +200,7 @@
                                 <td><input name="MonthlyPrice" id="MonthlyPrice" type="text" ></td>
                             </tr>
                             <tr>
-                                <td><strong>Description*:</strong></td>
+                                <td><strong>Description:</strong></td>
                                 <td><textarea name="Description" id="Description" ></textarea></td>
                             </tr>
                             <tr>
@@ -154,7 +226,7 @@
                             </tr>
                             <tr>
                                 <td><strong>Unit ID*:</strong></td>
-                                <td><input name="UnitID" id="UnitID" type="text" required ></td>
+                                <td><input name="UnitID" id="UnitID" type="text" required placeholder="Cxxx"></td>
                             </tr>
                             <tr>
                                 <td><strong>Unit Name:</strong></td>
@@ -166,7 +238,13 @@
                             </tr>
                             <tr>
                                 <td><strong>Property ID*:</strong></td>
-                                <td><input name="PropertyID" id="PropertyID" type="text" ></td>
+                                <td><select name="PropertyID" id="PropertyID">
+                    			<cfoutput>
+                    			<cfloop query="unit_id">
+                    				<option value="#PropertyID#">#PropertyID#</option>
+                    			</cfloop>
+					</cfoutput>
+                    		</select></td>
                             </tr>
                             <tr>
                                 <td><strong>Street Address*:</strong></td>
@@ -178,7 +256,60 @@
                             </tr>
                             <tr>
                                 <td><strong>State*:</strong></td>
-                                <td><input name="State" id="State" type="text" ></td>
+                                <td><select name="State" id="State">
+				<option>Select a State</option>
+                                <option value="AL">Alabama</option>
+                                <option value="AK">Alaska</option>
+                                <option value="AZ">Arizona</option>
+                                <option value="AR">Arkansas</option>
+                                <option value="CA">California</option>
+                                <option value="CO">Colorado</option>
+                                <option value="CT">Connecticut</option>
+                                <option value="DE">Delaware</option>
+                                <option value="DC">District Of Columbia</option>
+                                <option value="FL">Florida</option>
+                                <option value="GA">Georgia</option>
+                                <option value="HI">Hawaii</option>
+                                <option value="ID">Idaho</option>
+                                <option value="IL">Illinois</option>
+                                <option value="IN">Indiana</option>
+                                <option value="IA">Iowa</option>
+                                <option value="KS">Kansas</option>
+                                <option value="KY">Kentucky</option>
+                                <option value="LA">Louisiana</option>
+                                <option value="ME">Maine</option>
+                                <option value="MD">Maryland</option>
+                                <option value="MA">Massachusetts</option>
+                                <option value="MI">Michigan</option>
+                                <option value="MN">Minnesota</option>
+                                <option value="MS">Mississippi</option>
+                                <option value="MO">Missouri</option>
+                                <option value="MT">Montana</option>
+                                <option value="NE">Nebraska</option>
+                                <option value="NV">Nevada</option>
+                                <option value="NH">New Hampshire</option>
+                                <option value="NJ">New Jersey</option>
+                                <option value="NM">New Mexico</option>
+                                <option value="NY">New York</option>
+                                <option value="NC">North Carolina</option>
+                                <option value="ND">North Dakota</option>
+                                <option value="OH">Ohio</option>
+                                <option value="OK">Oklahoma</option>
+                                <option value="OR">Oregon</option>
+                                <option value="PA">Pennsylvania</option>
+                                <option value="RI">Rhode Island</option>
+                                <option value="SC">South Carolina</option>
+                                <option value="SD">South Dakota</option>
+                                <option value="TN">Tennessee</option>
+                                <option value="TX">Texas</option>
+                                <option value="UT">Utah</option>
+                                <option value="VT">Vermont</option>
+                                <option value="VA">Virginia</option>
+                                <option value="WA">Washington</option>
+                                <option value="WV">West Virginia</option>
+                                <option value="WI">Wisconsin</option>
+                                <option value="WY">Wyoming</option>
+                            </select></td>
                             </tr>
                             <tr>
                                 <td><strong>Date Available*:</strong></td>
@@ -189,7 +320,7 @@
                                 <td><input name="MonthlyPrice" id="MonthlyPrice" type="text" ></td>
                             </tr>
                             <tr>
-                                <td><strong>Description*:</strong></td>
+                                <td><strong>Description:</strong></td>
                                 <td><textarea name="Description" id="Description" ></textarea></td>
                             </tr>
                             <tr>

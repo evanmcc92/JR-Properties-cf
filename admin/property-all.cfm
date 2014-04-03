@@ -2,7 +2,7 @@
 
 <html>
 <head>
-    <title>All Listings - Admin - J&R Properties</title>
+    <title>All Properties - Admin - J&R Properties</title>
     <link rel="stylesheet" type="text/css" href="../css/main.css">
     <meta name="robots" content="noindex,nofollow">
     <meta name="googlebot" content="noindex,nofollow">
@@ -38,46 +38,46 @@
 <body>
     <div id="body">
                
-            <cfquery datasource="team3" name="listings">
-            SELECT UnitID, StreetAddress, City, DateAvailable FROM ResidentialUnits
-            UNION
-            SELECT UnitID, StreetAddress, City, DateAvailable FROM CommercialUnits
+            <cfquery datasource="team3" name="properties">
+            SELECT * FROM Properties
             </cfquery>
 
     <cfinclude template="header.cfm">
     
-        <h1>Listings</h1>
+        <h1>Properties</h1>
         <cfoutput>
-            <h3>Total Listings: #listings.RecordCount#</h3>
-            <h3><a href="listing-add.cfm">Add New Listing</a></h3>
+            <h3>Total Number of Properties: #properties.RecordCount#</h3>
+            <h3><a href="property-add.cfm">Add New Property</a></h3>
             
             <table>
             	<tr>
-                	<th colspan="6">Listings</th>
+                	<th colspan="7">Properties</th>
                 </tr>
                 <tr>
-                	<th>Unit ID</th>
+                	<th>Property ID</th>
                 	<th>Street Address</th>
                 	<th>City</th>
+                	<th>Number of Units</th>
                 	<th colspan="2">Options</th>
                 </tr>
-                <cfloop query="listings">
+                <cfloop query="properties">
                 <tr>
-                	<td>#UnitID#</td>
+                	<td>#PropertyID#</td>
                 	<td>#StreetAddress#</td>
                 	<td>#City#</td>
-                	<td><form action="listing-full.cfm" method="post">
-                    <input type="hidden" name="UnitID" value="#UnitID#">
+                	<td>#NumberofUnits#</td>
+                	<td><form action="property-full.cfm" method="post">
+                    <input type="hidden" name="PropertyID" value="#PropertyID#">
                     <input value="See More" type="submit" class="button">
                     </form></td>
-                	<td><form action="listing-update.cfm" method="post">
-                    <input type="hidden" name="UnitID" value="#UnitID#">
+                	<td><form action="property-update.cfm" method="post">
+                    <input type="hidden" name="PropertyID" value="#PropertyID#">
                     <input value="Edit" type="submit" class="button">
                     </form></td>
                 </tr>
                 </cfloop>
                 <tr>
-                    <td colspan="6" class="break">&nbsp;</td>
+                    <td colspan="7" class="break">&nbsp;</td>
                 </tr>
             </table>
         </cfoutput>

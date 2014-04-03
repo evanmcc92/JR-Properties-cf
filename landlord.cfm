@@ -52,7 +52,7 @@
     
         <article>
             <section id="landlord-text">
-                <p>J & R Properties is committed to administrating all particulars associated with maintenance and management. We provide the following services:</p>
+                <p>J&R Properties is committed to administrating all particulars associated with maintenance and management. We provide the following services:</p>
     
                 <p>Property Management:</p>
 <ul>

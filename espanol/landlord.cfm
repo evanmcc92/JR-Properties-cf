@@ -52,7 +52,7 @@
     
         <article>
             <section id="landlord-text">
-                <p>J & R Propiedades tiene el compromiso de administrar todos sus detalles asociados con el mantenimiento y la gesti&oacute;n. Ofrecemos los siguientes servicios:</p>
+                <p>J&R Propiedades tiene el compromiso de administrar todos sus detalles asociados con el mantenimiento y la gesti&oacute;n. Ofrecemos los siguientes servicios:</p>
     
                 <p>Gesti&oacute;n de Propiedades:</p>
 <ul><li>Colecciones de renta</li>

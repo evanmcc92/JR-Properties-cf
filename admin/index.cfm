@@ -12,7 +12,7 @@
 		#navbar li {
 			list-style-type: none;
 			display: block;
-			padding: 5px 25px;
+			padding: 5px 10px;
 			float:left;
 		}
 		table {

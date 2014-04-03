@@ -37,7 +37,7 @@ select * from ResidentialUnits where City = 'Revere'
     
         <article>
             <section id="article">
-                <p>Managing residential properties is our specialty since 1987. We provide quality apartments in Everett, Lynn, Chelsea and Revere. Click on an area below in order to browser our current offerings.</p>
+                <p>Managing residential properties is our specialty since 1987. We provide quality apartments in Everett, Lynn, Chelsea and Revere. The listings below provide you with unit and availability information. If a unit has a date available of TAW (also known as tenant at will), please fill out an application and call us to indicate your interest. As soon as the unit becomes available, which can be within the next 30 days, we will contact you.</p>
                 <section id="chelsea">
                     <h4>Chelsea</h4><p class="top"><a href="#top">Top</a></p>
                     <cfloop query="unitsfromchelsea">
