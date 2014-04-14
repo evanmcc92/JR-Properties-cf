@@ -37,7 +37,7 @@ select * from ResidentialUnits where City = 'Revere'
     
         <article>
             <section id="article">
-                <p>La gesti&oacute;n de propiedades residenciales es nuestra especialidad desde 1987. Ofrecemos apartamentos de calidad en Everett, Lynn, Chelsea y Revere. Los detalles abajo le proporcionan informaci&oacute;n sobre las unidades y su disponibilidad. Si una unidad tiene una fecha disponible de TAW (también conocido como inquilino a voluntad), por favor llene una solicitud y llámenos para indicar su interés. Tan pronto como la unidad esté disponible (que puede ser entre los próximos 30 días), nos pondremos en contacto con usted. </p>
+                <p>La gesti&oacute;n de propiedades residenciales es nuestra especialidad desde 1987. Ofrecemos apartamentos de calidad en Everett, Lynn, Chelsea y Revere. Los detalles abajo le proporcionan informaci&oacute;n sobre las unidades y su disponibilidad. Si una unidad tiene una fecha disponible de TAW (tambi&eacute;n conocido como inquilino a voluntad), por favor llene una solicitud y ll&aacute;menos para indicar su inter&eacute;s. Tan pronto como la unidad est&eacute; disponible (que puede ser entre los pr&oacute;ximos 30 d&iacute;as), nos pondremos en contacto con usted.</p>
                 <section id="chelsea">
                     <h4>Chelsea</h4><p class="top"><a href="#top">Parte superior</a></p>
                     <cfloop query="unitsfromchelsea">

@@ -18,7 +18,7 @@
 <h1>Mantenimiento</h1>
     
         <article>
-                <p>Lamentamos o&iacute;r que usted est&aacute; experimentando inconvenientes con su unidad. Por favor complete el siguiente formulario con su nombre, tel&eacute;fono y descripci&oacute;n del problema. Al enviar el formulario, nuestro equipo  comenzar&aacute; a resolver el problema de la mejor manera posible.</p>
+                <p>Lamentamos o&iacute;r que usted est&aacute; experimentando inconvenientes con su unidad. Por favor complete el siguiente formulario con su nombre, tel&eacute;fono y descripci&oacute;n del problema. Al enviar el formulario, nuestro equipo comenzar&aacute; a resolver el problema de la mejor manera posible.</p>
 <cfquery datasource="team3" name="unit_id">
             SELECT UnitID FROM ResidentialUnits
             UNION All
