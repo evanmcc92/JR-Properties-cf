@@ -61,7 +61,7 @@ select * from Properties WHERE PropertyID = #Form.PropertyID#
                     <input type="hidden" name="PropertyID" value="#PropertyID#">
                     <input value="Edit" type="submit" class="button">
                     </form></p>
-                    <p><a href="tenant-all.cfm">All Properties</a></p>
+                    <p><a href="property-all.cfm">All Properties</a></p>
                     <p>&nbsp;</p>
                 
                     <table id="#PropertyID#">

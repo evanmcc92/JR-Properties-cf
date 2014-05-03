@@ -31,6 +31,10 @@
 		.break {
 			border-top: 1px solid silver;
 		}
+		.left {
+			text-align:left
+		}
+
 	</style>
 
 </head>
@@ -52,7 +56,7 @@
                     <tr>
                         <th colspan="4">Applications</th>
                     </tr>
-                    <tr>
+                <tr class="left">
                         <th>Date Applied</th>
                         <th>Last Name</th>
                         <th>First Name</th>
@@ -83,7 +87,7 @@
                         <tr>
                             <th colspan="5">Tickets</th>
                         </tr>
-                        <tr>
+                <tr class="left">
                             <th>Date Filed</th>
                             <th>Last Name</th>
                             <th>First Name</th>

@@ -15,10 +15,10 @@
 
 <!--if the forms email field is filled out-->
 <cfif isDefined("form.email")>
-<cfmail from="postmaster@evanamccullough.com" 
+<cfmail from="jandrpropertyrentals@gmail.com" 
         to="#form.name# <#form.email#>"
-        subject="Landlord Message"
-        server= "smtp.evanamccullough.com"
+        subject="Contact Us Message"
+        server= "smtp.gmail.com"
         type="html" >
         <html>
             <body>

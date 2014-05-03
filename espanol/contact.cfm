@@ -22,10 +22,10 @@
 
 <!--if the forms email field is filled out-->
 <cfif isDefined("form.email")>
-<cfmail from="postmaster@evanamccullough.com" 
+<cfmail from="jandrpropertyrentals@gmail.com" 
         to="#form.name# <#form.email#>"
         subject="Contact Us Message"
-        server= "smtp.evanamccullough.com"
+        server= "smtp.gmail.com"
         type="html" >
         <html>
             <body>
@@ -69,7 +69,7 @@
                     <p>Nombre: <input name="name" id="name" size="50" Required="YES" Message="Entre su nombre aqui."></p>
                     <p>Mensaje:<br>
                        <textarea name="message" id="message" cols="43" rows="5" placeholder="Entre su mensaje aqui."></textarea></p>
-                    <p><input type="submit" value="Enviar"> <input type="reset" value="Reiniciar"></p> 
+                    <p><input type="submit" value="Enviar" class="button"> <input type="reset" value="Reiniciar" class="button"></p> 
                 </form>
             </section>
       </article>

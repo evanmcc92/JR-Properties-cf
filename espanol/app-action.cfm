@@ -79,7 +79,7 @@
                           <td><strong>¿Es usted casado?*:</strong></td>
                             <td>#Form.Married#</td>
                             <td><strong>Ingresos Mensuales de la esposa:</strong></td>
-                            <td>#Form.SpouseMonthlyIncome#></td>
+                            <td>#DollarFormat(Form.SpouseMonthlyIncome)#></td>
                         </tr>
                         <tr>
                           <td><strong>N&uacute;mero de Seguro Social*:</strong></td>

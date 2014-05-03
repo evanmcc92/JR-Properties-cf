@@ -30,13 +30,17 @@
 		.break {
 			border-top: 1px solid silver;
 		}
+		.left {
+			text-align:left
+		}
+
 	</style>
     <script>
 	
 		function commercialresidential() {
     			document.getElementById("commercialform").style.display = 'none';
     			document.getElementById("residentialform").style.display = 'none';
-			var commercialresidential = prompt("Select Commerical or Residential");
+			var commercialresidential = prompt("Select Commercial or Residential");
 			
 			if (commercialresidential == "commercial" || commercialresidential == "Commercial") {
 				//display none on residential
@@ -54,7 +58,7 @@
 					//display none on commercial
     					document.getElementById("residentialform").style.display = 'block';
 				} else {
-					prompt("Wrong Submission\nSelect Commerical or Residential");
+					prompt("Wrong Submission\nSelect Commercial or Residential");
 				}
 			}
 			

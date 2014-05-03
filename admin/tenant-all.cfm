@@ -32,6 +32,10 @@
 		.break {
 			border-top: 1px solid silver;
 		}
+		.left {
+			text-align:left
+		}
+
 	</style>
 </head>
 
@@ -53,7 +57,9 @@
             	<tr>
                 	<th colspan="7">Listings</th>
                 </tr>
-                <tr>
+
+                <tr class="left">
+
                 	<th>Tenant ID</th>
                 	<th>First Name</th>
                 	<th>Last Name</th>

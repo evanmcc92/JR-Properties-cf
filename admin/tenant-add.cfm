@@ -40,7 +40,7 @@
     <div id="body">
 
     <cfinclude template="header.cfm">
-                <h1>Add A Listing</h1>
+                <h1>Add A Tenant</h1>
     
         <article>
  

@@ -32,6 +32,10 @@
 		.break {
 			border-top: 1px solid silver;
 		}
+		.left {
+			text-align:left
+		}
+
 	</style>
 </head>
 
@@ -53,7 +57,9 @@
             	<tr>
                 	<th colspan="7">Properties</th>
                 </tr>
-                <tr>
+
+                <tr class="left">
+
                 	<th>Property ID</th>
                 	<th>Street Address</th>
                 	<th>City</th>

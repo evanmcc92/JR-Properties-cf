@@ -30,6 +30,9 @@
 		.break {
 			border-top: 1px solid silver;
 		}
+		.left {
+		text-align:left
+}
 	</style>
     
 </head>

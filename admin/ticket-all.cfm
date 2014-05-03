@@ -32,6 +32,10 @@
 		.break {
 			border-top: 1px solid silver;
 		}
+		.left {
+			text-align:left
+		}
+
 	</style>
 </head>
 
@@ -54,7 +58,9 @@ select * from MaintenanceTickets where Resolved = No;
             	<tr>
                 	<th colspan="6">Tickets</th>
                 </tr>
-                <tr>
+
+                <tr class="left">
+
                 	<th>Date Filed</th>
                 	<th>Last Name</th>
                 	<th>First Name</th>

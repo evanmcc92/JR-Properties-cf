@@ -79,7 +79,7 @@
                             <td><strong>Are You Married:</strong></td>
                             <td>#Form.Married#</td>
                                 <td><strong>Spouse's Monthly Income:</strong></td>
-                            <td>#Form.SpouseMonthlyIncome#></td>
+                            <td>#DollarFormat(Form.SpouseMonthlyIncome)#></td>
                         </tr>
                         <tr>
                             <td><strong>SSN:</strong></td>
